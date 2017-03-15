@@ -10,3 +10,16 @@ Deliveries containing multiple products are split up into individual products, w
 
 Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated - unmodified data will be discarded early in the process.
 
+
+## Support
+
+CDON Marketplace has its own customer service that gladly helps you with Marketplace related cases.
+
+When contacting support, please provide the following information, if available:
+
+* Merchant ID
+* Receipt ID (see [receipts](receipts.md))
+* Tracking ID (see [tracking](tracking.md))
+* Tracking Code (see [tracking](tracking.md))
+
+Those details will help giving a more accurate diagnosis with technical matters.
