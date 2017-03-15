@@ -1,2 +1,0 @@
-# ma-docs
-Marketplace documentation
