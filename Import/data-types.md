@@ -29,7 +29,7 @@ pRoDuCt_A
 ```
 
 **Important!**
-> No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to maintain data consistency in regards of duplicate product IDs.
+> No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
 
 
 ### Valid Identity Characters
@@ -43,4 +43,4 @@ The following characters are allowed in an identity token:
 * \- (hyphen)
 * \_ (underscore)
 
-A valid product ID must be 1 - 40 characters long.
+A valid product ID is 1 - 40 characters long.
