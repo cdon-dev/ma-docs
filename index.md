@@ -1,0 +1,1 @@
+Welcome to the documentation of the CDON Marketplace merchant integration!
