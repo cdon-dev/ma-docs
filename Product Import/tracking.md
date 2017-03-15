@@ -43,13 +43,13 @@ The response body may look similar to this:
 
 The most significant property is Status (line 2), which indicates the current import status:
 
-* No Content: The delivery was empty.
-* \* Receiving: The delivery is still being received.
-* \* Ingestion Failure: Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
-* Queued: All data has been received, but processing has not yet started.
-* Processing: Processing has begun, and there are still products to process.
-* Completed Successfully: All products have been successfully imported!
-* Completed With Errors: All products have been processed, but some (or all) failed to be imported.
+* **No Content**: The delivery was empty.
+* \* **Receiving**: The delivery is still being received.
+* \* **Ingestion** Failure: Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
+* **Queued**: All data has been received, but processing has not yet started.
+* **Processing**: Processing has begun, and there are still products to process.
+* **Completed Successfully**: All products have been successfully imported!
+* **Completed With Errors**: All products have been processed, but some (or all) failed to be imported.
 
 Statuses marked with an asterisk (\*) **may** have products that have been processed.
 
@@ -97,10 +97,11 @@ The response body may look similar to this:
 
 As seen above, the response contains a list of products, in which the Status (line 15) property is the most significant.
 
-* Queued: Still waiting to be imported.
-* Processing: The import process is ongoing for this product.
-* Imported: The product has been successfully imported!
-* Failed: This product has been rejected for some reason.
+* **Queued**: Still waiting to be imported.
+* **Processing**: The import process is ongoing for this product.
+* **Imported**: The product has been successfully imported!
+* **Partially Imported**: Some of the data has been imported and others has been discarded.
+* **Failed**: This product has been rejected for some reason.
 
 The product element also contains two more vital properties: **TrackingId** (line 17) and **TrackingCode** (line 18).
 

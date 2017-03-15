@@ -12,13 +12,9 @@ A vital concept with this data is that it represents a **complete product defini
 In practice, this means that, for example, it is not possible to update only e.g. the title of a product. That would obliterate all category- and variation related data.
 
 
-## XSD
+## Data Contract
 
-The data structure is defined in a number of XSD (XML Schema Definition) files at the following location:
-
-[http://schemas.cdon.com/marketplace/](http://schemas.cdon.com/marketplace/)
-
-The relevant files are the following:
+The relevant schema files are the following:
 
 * product.xsd
 * types.xsd

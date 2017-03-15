@@ -3,12 +3,9 @@
 The media data type associate pictures and videos with a product.
 
 
-## XSD
-The data structure is defined in a number of XSD (XML Schema Definition) files at the following location:
+## Data Contract
 
-[http://schemas.cdon.com/marketplace/](http://schemas.cdon.com/marketplace/)
-
-The relevant files are the following:
+The relevant schema files are the following:
 
 * media.xsd
 * types.xsd
@@ -46,7 +43,7 @@ Example 2:
 When the user has selected the flavor "banana", the picture displayed will not change until the user selects another size.
 
 
-## Validation
+## Validation Rules
 
 Every product must have exactly one main picture.
 

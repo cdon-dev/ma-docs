@@ -9,13 +9,9 @@ Products with the status "*offline*" will not be buyable.
 This data type is incremental, which means that any data that can be applied will be applied without altering related data. Hence, it is possible to import just the updates as soon as they are available.
 
 
-## XSD
+## Data Contract
 
-The data structure is defined in a number of XSD (XML Schema Definition) files at the following location:
-
-[http://schemas.cdon.com/marketplace/](http://schemas.cdon.com/marketplace/)
-
-The relevant files are the following:
+The relevant schema files are the following:
 
 * stock.xsd
 * types.xsd
@@ -23,6 +19,6 @@ The relevant files are the following:
 The last file is a supplement to the stock.xsd, which define the stock data structure.
 
 
-## Validation
+## Validation Rules
 
 The delivery time is a range in number of days, where the minimum value may not be greater than the maximum value.
