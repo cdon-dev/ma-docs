@@ -24,11 +24,12 @@ Note that product IDs are **not case sensitive**, and only accepts certain chara
 ```
 Product_A
 product_a
+PRODUCT_A
 pRoDuCt_A
 ```
 
-==Important!==
-No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to make sure data consistencies in regards of duplicate product IDs.
+**Important!**
+> No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to maintain data consistency in regards of duplicate product IDs.
 
 
 ### Valid Identity Characters
@@ -38,8 +39,8 @@ The following characters are allowed in an identity token:
 * a-z
 * A-Z
 * 0-9
-* Slash
-* Underscore
-* Hyphen
+* \\ (slash)
+* \- (hyphen)
+* \_ (underscore)
 
-A valid product ID must be 1--40 characters long.
+A valid product ID must be 1 - 40 characters long.
