@@ -2,7 +2,7 @@
 
 Products in any delivery are processed individually as they journey through the import process. As the product passes certain milestones during the import, an entry is recorded in what is called the "tracking API". As the name suggests, these entries can be used to track the progress of the import (and individual products).
 
-The [receipt](receipts.md) that is given when a delivery has been accepted is the key to retrieve status of the import, but also to examine what events have passed for each product. By using the tracking API, detailed information is provided to e.g. why a product has not been successfully imported.
+The [receipt](../receipts.md) that is given when a delivery has been accepted is the key to retrieve status of the import, but also to examine what events have passed for each product. By using the tracking API, detailed information is provided to e.g. why a product has not been successfully imported.
 
 
 ## Import Status
@@ -30,7 +30,7 @@ The response body may look similar to this:
     "AcceptedUtc": "2017-12-24T14:00:00.0000000Z",
     "Data": "Product",
     "ContractVersion": "1.0",
-    "MerchantId": "023f5021fa464f65baeabb5aea1fe82f",
+    "MerchantId": "3ff7cdd47fe243d48e12ff62a1215a87",
     "ForeignKey": null
   },
   "Products": {
@@ -44,14 +44,14 @@ The response body may look similar to this:
 The most significant property is Status (line 2), which indicates the current import status:
 
 * No Content: The delivery was empty.
-* :star: Receiving:The delivery is still being received.
-* :star: Ingestion Failure: Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
+* \* Receiving: The delivery is still being received.
+* \* Ingestion Failure: Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
 * Queued: All data has been received, but processing has not yet started.
 * Processing: Processing has begun, and there are still products to process.
 * Completed Successfully: All products have been successfully imported!
 * Completed With Errors: All products have been processed, but some (or all) failed to be imported.
 
-Statuses marked with a :star: **may** have products that have been processed.
+Statuses marked with an asterisk (\*) **may** have products that have been processed.
 
 The response also contains static details about the delivery (line 6), as well as import progress information (line 13).
 
@@ -79,7 +79,7 @@ The response body may look similar to this:
     "AcceptedUtc": "2017-12-24T14:00:00.0000000Z",
     "Data": "Product",
     "ContractVersion": "1.0",
-    "MerchantId": "fb742e25554a4d98bd56538ca7bffee7",
+    "MerchantId": "3ff7cdd47fe243d48e12ff62a1215a87",
     "ForeignKey": null
   },
   "Products": [
@@ -127,8 +127,8 @@ The response body may look similar to this:
     "Timestamp": "2017-12-24T14:00:00.0000000Z",
     "TrackingId": "11c80f46f423431692c5291b997116a6",
     "TrackingCode": 1383146305,
-    "ReceiptId": "87be0e7ced0c4749ba9c9ccfa48b8752",
-    "MerchantId": "e3a4b53f77084f75837d27082b374ea3",
+    "ReceiptId": "00b24f3a93124da7aec34447124e5aa1",
+    "MerchantId": "3ff7cdd47fe243d48e12ff62a1215a87",
     "ProductId": "product_a",
     "ChannelId": null,
     "Message": "Business constraint violation",
