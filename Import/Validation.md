@@ -6,7 +6,7 @@ After the data has been accepted, one of the stages is the business validation. 
 
 This kind of delayed validation offers two important benefits:
 
-- Each product is evaluated individually
+* Each product is evaluated individually
 This allows for a complete inventory validation, as opposed to an import that halts on the first error.
-- Detailed validation messages allow for self-help
+* Detailed validation messages allow for self-help
 Failed products have already been identified and can be amended by you for re-import.

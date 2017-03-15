@@ -2,10 +2,10 @@
 
 In order to present a complete and buyable product to CDON's customers, four distinct types of data are required.
 
-- Description
-- Price
-- Stock
-- Media
+* Description
+* Price
+* Stock
+* Media
 
 These four types of data are fully independent from each other in the context of importing the data. In most cases, they also have different life cycles. Depending on your business, some data is shorter lived and require more frequent updates than other data. This enables a more flexible delivery with faster imports.
 
@@ -19,4 +19,27 @@ To facilitate a structured delivery of data, each set of data must fulfill a **d
 ## Identities
 The product ID is the key that correlates all product data from different types.
 
-Note that the product ID is **not case sensitive**, and only accepts certain characters.
+Note that product IDs are **not case sensitive**, and only accepts certain characters. For example, the following IDs are all considered equal:
+
+```
+Product_A
+product_a
+pRoDuCt_A
+```
+
+==Important!==
+No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to make sure data consistencies in regards of duplicate product IDs.
+
+
+### Valid Identity Characters
+
+The following characters are allowed in an identity token:
+
+* a-z
+* A-Z
+* 0-9
+* Slash
+* Underscore
+* Hyphen
+
+A valid product ID must be 1--40 characters long.

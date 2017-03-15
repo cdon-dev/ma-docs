@@ -8,4 +8,4 @@ In the CDON Marketplace import process, there are two vital key concepts; **data
 
 Deliveries containing multiple products are split up into individual products, which are imported independently from each other. An inventory import is therefore "greedy", which means that any and all products that **can** be imported **will** be imported.
 
-Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated - unmodified data will be discarded early in the process.
+Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated --- unmodified data will be discarded early in the process.
