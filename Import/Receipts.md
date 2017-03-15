@@ -14,8 +14,7 @@ The receipt means that the data has been received, and that the import will star
 
 It is important to note that the receipt in the delivery response does not mean that the products have been imported - the receipt is only an acknowledgement that the delivery has been received and accepted. This has several benefits:
 
-* A response is generated as soon as the data is received
-There is no need to wait for the entire import to complete.
+* A response is generated as soon as the data is received. There is no need to wait for the entire import to complete.
 * The import is more error resilient. Errors and warnings will be tracked and handled to have as small impact as possible on the rest of the import.
 * Multiple imports can be enqueued in parallel. The four different types of data can be imported simultaneously.
 * Detailed per-product results can be retrieved. Each failed product can be examined and diagnosed in detail, and amended individually without affecting any other part of the import process.

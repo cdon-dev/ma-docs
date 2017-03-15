@@ -49,4 +49,5 @@ When the user has selected the flavor "banana", the picture displayed will not c
 ## Validation
 
 Every product must have exactly one main picture.
+
 Extra pictures and/or videos are optional.
