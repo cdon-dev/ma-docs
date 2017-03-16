@@ -1,10 +1,19 @@
 Documentation for merchants integrating with CDON Marketplace.
 
+Written in Markdown:
+
+	https://mkdocs.readthedocs.io/en/stable/user-guide/writing-your-docs/
+	https://help.github.com/articles/basic-writing-and-formatting-syntax/
+	http://commonmark.org/help/
+	
+	"Read The Docs" uses "MkDocs" to parse the markdown, which supports
+	"GitHub Flavored Markdown", which in turn is based on "CommonMark".
+
 Published by Read The Docs:
 
 	http://ma-docs.readthedocs.io/
 
-For more information regarding CDON Marketplace, please visit:
+Applied at CDON Marketplace:
 
 	http://cdon.se/marketplace/
 	http://cdon.dk/marketplace/
