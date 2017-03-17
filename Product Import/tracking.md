@@ -44,8 +44,8 @@ The response body may look similar to this:
 The most significant property is Status (line 2), which indicates the current import status:
 
 * **No Content**: The delivery was empty.
-* \* **Receiving**: The delivery is still being received.
-* \* **Ingestion** Failure: Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
+* **Receiving** (\*): The delivery is still being received.
+* **Ingestion Failure** (\*): Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
 * **Queued**: All data has been received, but processing has not yet started.
 * **Processing**: Processing has begun, and there are still products to process.
 * **Completed Successfully**: All products have been successfully imported!
