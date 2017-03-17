@@ -4,6 +4,12 @@ Products in any delivery are processed individually as they journey through the 
 
 The [receipt](receipts.md) that is given when a delivery has been accepted is the key to retrieve status of the import, but also to examine what events have passed for each product. By using the tracking API, detailed information is provided to e.g. why a product has not been successfully imported.
 
+The URL to the tracking-API is:
+
+```
+http://tracking-import.api.marketplace.cdon.com
+```
+
 
 ## Import Status
 
