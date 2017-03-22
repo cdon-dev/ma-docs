@@ -8,6 +8,11 @@ Products with the status "*offline*" will not be buyable.
 
 This data type is incremental, which means that any data that can be applied will be applied without altering related data. Hence, it is possible to import just the updates as soon as they are available.
 
+The URL to post availability data to is:
+```
+http://import.api.marketplace.cdon.com/availability
+```
+
 
 ## Data Contract
 

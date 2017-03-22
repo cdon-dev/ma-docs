@@ -4,6 +4,11 @@ The product data type is the information that describes the product and specifie
 
 To reduce the quantity of imported data, products whose content has not changed since the last successful import will be discarded automatically.
 
+The URL to post product data to is:
+```
+http://import.api.marketplace.cdon.com/product
+```
+
 
 ## Product Definition
 
