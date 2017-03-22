@@ -1,10 +1,10 @@
-# Introduction
+# Integration
 
 Deliveries are made to Marketplace by posting **XML**-formatted data to the endpoint for the corresponding [data type](../data-types.md).
 
 Responses are returned with a HTTP status code and possibly a body in **JSON**-format.
 
-The [receipt](../receipts.md) received can be used to [track](../tracking.md) the progress of the delivery.
+Each delivery that is acceptable (according to the data contract) receives a [receipt](../receipts.md). Make sure to store this, as it is the key to [tracking](../tracking.md) the progress of the delivery.
 
 
 ## Endpoints
@@ -20,7 +20,7 @@ Append the name of the data type like so:
 ```
 http://import.api.marketplace.cdon.com/product
 http://import.api.marketplace.cdon.com/price
-http://import.api.marketplace.cdon.com/stock
+http://import.api.marketplace.cdon.com/availability
 http://import.api.marketplace.cdon.com/media
 ```
 
