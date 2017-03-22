@@ -4,6 +4,11 @@ The price data type specifies pricing details for a product. Every product must 
 
 This data type is incremental, which means that any data that can be applied will be applied without altering related data. Hence, it is possible to import just the updates as soon as they are available.
 
+The URL to post price data to is:
+```
+http://import.api.marketplace.cdon.com/price
+```
+
 
 ## Data Contract
 
