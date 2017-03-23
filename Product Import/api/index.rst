@@ -4,7 +4,6 @@ Integration
 
 
 .. toctree::
-	:hidden:
 
 	Product
 	Price
