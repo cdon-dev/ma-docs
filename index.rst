@@ -3,6 +3,8 @@ CDON Marketplace
 ################
 
 .. toctree::
+	:titlesonly:
+	:hidden:
 	:maxdepth: 2
 	:caption: Contents:
 
