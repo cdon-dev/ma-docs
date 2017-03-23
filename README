@@ -1,13 +1,16 @@
 Documentation for merchants integrating with CDON Marketplace.
 
-Written in Markdown:
+Written in reStructuredText:
 
-	https://mkdocs.readthedocs.io/en/stable/user-guide/writing-your-docs/
-	https://help.github.com/articles/basic-writing-and-formatting-syntax/
-	http://commonmark.org/help/
-	
-	"Read The Docs" uses "MkDocs" to parse the markdown, which supports
-	"GitHub Flavored Markdown", which in turn is based on "CommonMark".
+	https://developer.lsst.io/docs/rst_styleguide.html
+	https://docs.python.org/devguide/documenting.html#style-guide
+	http://www.sphinx-doc.org/en/stable/rest.html
+	http://docutils.sourceforge.net/docs/user/rst/quickref.html
+	https://tools.ietf.org/doc/docutils-doc/FAQ.html
+
+Previewed in:
+
+	http://rst.ninjs.org/
 
 Published by Read The Docs:
 
