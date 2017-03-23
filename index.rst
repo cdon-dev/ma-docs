@@ -2,6 +2,15 @@
 CDON Marketplace
 ################
 
+.. toctree::
+	:maxdepth: 2
+	:caption: Contents:
+
+	Markets
+	FAQ
+	Product Import <Product Import/index>
+
+
 Welcome to the documentation of the CDON Marketplace merchant integration!
 
 Marketplace has a number of **APIs** for system integration, and also an **administration** page for manual management.
