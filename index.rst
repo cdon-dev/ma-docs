@@ -11,4 +11,4 @@ Marketplace has a number of **APIs** for system integration, and also an **admin
 
 The APIs make it possible for merchants to send and receive data via HTTP to manage their inventory and orders. Communication with the APIs is not restricted to any specific programming language. However, the data exchange must be formatted in the right way, which is described in these documents.
 
-Why doesn't all :doc:`files <Markets>` work?
+Why doesn't all :doc:`files <Product Import/Index>` work?
