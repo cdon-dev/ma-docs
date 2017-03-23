@@ -1,4 +1,6 @@
-# Validation
+##########
+Validation
+##########
 
 The pre-validation performed immediately on the import request only validates that the data is acceptable in the sense that it is compliant with the delivery contract. No evaluation of the contents is done at this stage.
 
