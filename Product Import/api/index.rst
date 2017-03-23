@@ -3,14 +3,6 @@ Integration
 ###########
 
 
-.. toctree::
-
-	Product
-	Price
-	Availability
-	Media
-
-
 Deliveries are made to Marketplace by posting **XML**-formatted data to the endpoint for the corresponding :doc:`data type <../data-types>`.
 
 Responses are returned with a HTTP status code and possibly a body in **JSON**-format.

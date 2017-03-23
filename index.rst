@@ -12,15 +12,15 @@ CDON Marketplace
 
 .. toctree::
 	:hidden:
-	:maxdepth: 3
+	:maxdepth: 2
 	:caption: Product Import
 
 	Product Import/index
+	Product Import/api/index
 	Product Import/receipts
 	Product Import/data-types
 	Product Import/validation
 	Product Import/tracking
-	Product Import/api/index
 
 
 Welcome to the documentation of the CDON Marketplace merchant integration!
