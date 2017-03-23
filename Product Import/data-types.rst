@@ -35,8 +35,8 @@ Note that product IDs are **not case sensitive**, and only accepts certain chara
 	pRoDuCt_A
 
 
-.. attention::
-	No check will be done to identify duplicate (and possibly) conflicting product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
+.. ATTENTION::
+	No check will be done to identify duplicate (and possibly conflicting) product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
 
 
 Valid Identity Characters

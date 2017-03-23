@@ -6,7 +6,8 @@ The availability data type specifies details regarding stock, delivery times, et
 
 Every product must specify the availability status for each market, as well as the expected delivery time range. The intention is to give the customer an as accurate estimation as possible of when the product will be delivered.
 
-Products with the status ``offline`` will not be buyable.
+.. ATTENTION::
+	Products with the status ``offline`` will **not** be buyable.
 
 This data type is incremental, which means that any data that can be applied will be applied without altering related data. Hence, it is possible to import just the updates as soon as they are available.
 

@@ -11,6 +11,7 @@ The URL to the tracking-API is::
 	http://tracking-import.api.marketplace.cdon.com
 
 
+.. _import-status:
 *************
 Import Status
 *************
@@ -23,12 +24,12 @@ The following endpoint accepts the receipt ID to provide an overall status of th
 
 	/import/<receiptId>/status
 
-If the delivery cannot be found, the response HTTP status code is `404 (not found) <https://httpstatuses.com/404>`. Otherwise, the code should be `200 (OK) <https://httpstatuses.com/200>`.
+If the delivery cannot be found, the response HTTP status code is `404`_. Otherwise, the code should be `200`_.
 
 The response body may look similar to this:
 
-.. code-block:: csharp
-	:emphasize-lines: 2,6
+.. code-block:: json
+	:emphasize-lines: 2
 
 	{
 	  "Status": "Processing",
@@ -60,7 +61,7 @@ The most significant property is ``Status`` (line 2), which indicates the curren
   The delivery is still being received.
 * **Ingestion Failure** (\*)
 
-  Something went wrong when receiving the delivery. This is also indicated by the HTTP status code [500 (internal server error)](https://httpstatuses.com/500).
+  Something went wrong when receiving the delivery. This is also indicated by the HTTP status code `500`_.
 * **Queued**
 
   All data has been received, but processing has not yet started.
@@ -76,7 +77,7 @@ The most significant property is ``Status`` (line 2), which indicates the curren
 
 Statuses marked with an asterisk (\*) **may** have products that have been processed.
 
-The response also contains static details about the delivery (line 6), as well as import progress information (line 13).
+The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
 
 .. _import-summary:
@@ -91,11 +92,11 @@ The following endpoint accepts the receipt ID to provide a summary of that deliv
 	/import/<receiptId>/summary
 
 
-If the delivery cannot be found or the data has not yet been received, the response HTTP status code is `404 (not found) <https://httpstatuses.com/404>`. Otherwise, the code should be `200 (OK) <https://httpstatuses.com/200>`.
+If the delivery cannot be found or the data has not yet been received, the response HTTP status code is `404`_. Otherwise, the code should be `200`_.
 
 The response body may look similar to this:
 
-.. code-block:: csharp
+.. code-block:: json
 	:emphasize-lines: 15,17,18
 
 	{
@@ -144,6 +145,7 @@ The product element also contains two more vital properties: ``TrackingId`` (lin
 The *TrackingId* is the unique identifier for this particular event, whereas the *TrackingCode* is a code identifying the event type (similar to an error code). Please make sure to provide these two properties if contacting support, as they help pin-point the exact event and reason for something going wrong.
 
 
+.. _product-details:
 ***************
 Product Details
 ***************
@@ -155,11 +157,11 @@ The following endpoint accepts the receipt ID and the product ID to provide a de
 	/import/<receiptId>/<productId>
 
 
-If the delivery cannot be found or no events have been recorded for that particular product, the response HTTP status code is `404 (not found) <https://httpstatuses.com/404>`. Otherwise, the code should be `200 (OK) <https://httpstatuses.com/200>`.
+If the delivery cannot be found or no events have been recorded for that particular product, the response HTTP status code is `404`_. Otherwise, the code should be `200`_.
 
 The response body may look similar to this:
 
-.. code-block:: csharp
+.. code-block:: json
 	:emphasize-lines: 4,5
 
 	[
@@ -179,5 +181,12 @@ The response body may look similar to this:
 As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`import-summary`.
 
 
-.. highlight:: csharp
+
+
+.. _200: https://httpstatuses.com/200
+.. _404: https://httpstatuses.com/404
+.. _500: https://httpstatuses.com/500
+
+
+.. highlight:: json
 	:linenothreshold: 5
