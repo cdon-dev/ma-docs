@@ -12,7 +12,7 @@ CDON Marketplace
 
 .. toctree::
 	:hidden:
-	:maxdepth: 2
+	:maxdepth: 3
 	:caption: Product Import
 
 	Product Import/index
