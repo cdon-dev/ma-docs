@@ -24,16 +24,18 @@ Identities
 
 The product ID is the key that correlates all product data from different types.
 
-Note that product IDs are **not case sensitive**, and only accepts certain characters. For example, the following IDs are all considered equal::
+A valid product ID is 1 |--| 40 characters long, and only accepts certain characters (see below).
+
+.. ATTENTION::
+	No check will be done to identify duplicate (and possibly conflicting) product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
+
+Note that product IDs are **not case sensitive**! For example, the following IDs are all considered equal::
 
 	Product_A
 	product_a
 	PRODUCT_A
 	pRoDuCt_A
 
-
-.. ATTENTION::
-	No check will be done to identify duplicate (and possibly conflicting) product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
 
 
 Valid Identity Characters
@@ -44,11 +46,11 @@ The following characters are allowed in an identity token:
 * a-z
 * A-Z
 * 0-9
-* \\ (slash)
+* \\ (backslash)
 * \- (hyphen)
 * \_ (underscore)
 
-A valid product ID is 1 |--| 40 characters long.
+
 
 
 .. |--| unicode:: U+2013  .. en dash, trimming surrounding whitespace
