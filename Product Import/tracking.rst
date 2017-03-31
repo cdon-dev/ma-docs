@@ -10,7 +10,7 @@ The URL to the tracking-API is::
 	http://tracking-import.api.marketplace.cdon.com
 
 
-.. _import-status:
+.. _tracking-import-status:
 Import Status
 =============
 
@@ -78,7 +78,7 @@ Statuses marked with an asterisk (\*) **may** have products that have been proce
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
 
-.. _import-summary:
+.. _tracking-import-summary:
 Import Summary
 ==============
 
@@ -142,7 +142,7 @@ The product element also contains two more vital properties: ``TrackingId`` (lin
 The *TrackingId* is the unique identifier for this particular event, whereas the *TrackingCode* is a code identifying the event type (similar to an error code). Please make sure to provide these two properties if contacting support, as they help pin-point the exact event and reason for something going wrong.
 
 
-.. _product-details:
+.. _tracking-product-details:
 Product Details
 ===============
 
