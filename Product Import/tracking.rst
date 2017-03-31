@@ -49,31 +49,35 @@ The response body may look similar to this:
 	}
 
 
-The most significant property is ``Status`` (line 2), which indicates the current import status:
+The most significant property is ``Status`` (line 2), which indicates the current import status.
 
-* **No Content**
+.. _table-import-status:
+.. table:: Import Statuses
 
-  The delivery was empty.
-* **Receiving** (\*)
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| Status                | Status Code | Description                                   | Processing Started |
++=======================+=============+===============================================+====================+
+| NoContent             | 1           | The delivery was empty.                       | No                 |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| Receiving             | 2           | The delivery is still being received.         | Yes                |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| IngestionFailure      | 3           | Something went wrong when receiving the       | Yes                |
+|                       |             | delivery. This is also indicated by the HTTP  |                    |
+|                       |             | status code `500`_.                           |                    |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| Queued                | 4           | All data has been received, but processing    | No                 |
+|                       |             | has not yet started.                          |                    |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| Processing            | 5           | Processing has begun, and there are still     | Yes                |
+|                       |             | products to process.                          |                    |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| CompletedSuccessfully | 6           | All products have been successfully imported! | Yes                |
++-----------------------+-------------+-----------------------------------------------+--------------------+
+| CompletedWithErrors   | 7           | All products have been processed, but some    | Yes                |
+|                       |             | (or all) failed to be imported.               |                    |
++=======================+=============+===============================================+====================+
 
-  The delivery is still being received.
-* **Ingestion Failure** (\*)
-
-  Something went wrong when receiving the delivery. This is also indicated by the HTTP status code `500`_.
-* **Queued**
-
-  All data has been received, but processing has not yet started.
-* **Processing**
-
-  Processing has begun, and there are still products to process.
-* **Completed Successfully**
-
-  All products have been successfully imported!
-* **Completed With Errors**
-
-  All products have been processed, but some (or all) failed to be imported.
-
-Statuses marked with an asterisk (\*) **may** have products that have been processed.
+Statuses marked with *Processing Started* **may** have products that have been processed.
 
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
@@ -121,21 +125,25 @@ The response body may look similar to this:
 
 As seen above, the response contains a list of products, in which the ``Status`` (line 15) property is the most significant.
 
-* **Queued**
+.. _table-import-summary:
+.. table:: Product Statuses
 
-  Still waiting to be imported.
-* **Processing**
-
-  The import process is ongoing for this product.
-* **Imported**
-
-  The product has been successfully imported!
-* **Partially Imported**
-
-  Some of the data has been imported and others has been discarded.
-* **Failed**
-
-  This product has been rejected for some reason.
++-----------------------+-------------+-----------------------------------------------+
+| Status                | Status Code | Description                                   |
++=======================+=============+===============================================+
+| Queued                | 1           | Still waiting to be imported.                 |
++-----------------------+-------------+-----------------------------------------------+
+| Processing            | 2           | The import process is ongoing for this        |
+|                       |             | product.                                      |
++-----------------------+-------------+-----------------------------------------------+
+| Imported              | 3           | The product has been successfully imported!   |
++-----------------------+-------------+-----------------------------------------------+
+| PartiallyImported     | 4           | Some of the data has been imported and others |
+|                       |             | has been discarded.                           |
++-----------------------+-------------+-----------------------------------------------+
+| Failed                | 5           | This product has been rejected for some       |
+|                       |             | reason.                                       |
++=======================+=============+===============================================+
 
 The product element also contains two more vital properties: ``TrackingId`` (line 17) and ``TrackingCode`` (line 18).
 
