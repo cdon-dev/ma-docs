@@ -20,7 +20,7 @@ To facilitate a structured delivery of data, each set of data must fulfill a **d
 
 
 Identities
-----------
+==========
 
 The product ID is the key that correlates all product data from different types.
 
@@ -37,7 +37,7 @@ Note that product IDs are **not case sensitive**, and only accepts certain chara
 
 
 Valid Identity Characters
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 The following characters are allowed in an identity token:
 
