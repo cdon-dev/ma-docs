@@ -75,9 +75,9 @@ The most significant property is ``Status`` (line 2), which indicates the curren
 +-----------------------+-------------+-----------------------------------------------+--------------------+
 | CompletedWithErrors   | 7           | All products have been processed, but some    | Yes                |
 |                       |             | (or all) failed to be imported.               |                    |
-+=======================+=============+===============================================+====================+
++-----------------------+-------------+-----------------------------------------------+--------------------+
 
-Statuses marked with *Processing Started* **may** have products that have been processed.
+Statuses marked with *Processing Started* indicate that there **may** be products which have been processed.
 
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
@@ -143,7 +143,7 @@ As seen above, the response contains a list of products, in which the ``Status``
 +-----------------------+-------------+-----------------------------------------------+
 | Failed                | 5           | This product has been rejected for some       |
 |                       |             | reason.                                       |
-+=======================+=============+===============================================+
++-----------------------+-------------+-----------------------------------------------+
 
 The product element also contains two more vital properties: ``TrackingId`` (line 17) and ``TrackingCode`` (line 18).
 
