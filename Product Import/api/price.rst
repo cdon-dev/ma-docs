@@ -1,4 +1,3 @@
-###############
 Price Data Type
 ###############
 
@@ -11,9 +10,8 @@ The URL to post price data to is::
 	http://import.api.marketplace.cdon.com/price
 
 
-*************
 Data Contract
-*************
+=============
 
 The relevant schema files are the following:
 
@@ -23,16 +21,14 @@ The relevant schema files are the following:
 The last file is a supplement to the price.xsd, which define the price data structure.
 
 
-****************
 Validation Rules
-****************
+================
 
 The sale price may not be greater than the recommended price.
 
 
-*****
 Price
-*****
+=====
 
 The product price consists of two price values; **recommended** and **sale** price.
 
@@ -43,9 +39,8 @@ The *sale* price represents the price that the product is up for sales for.
 Please note that the prices must include VAT.
 
 
-***
 VAT
-***
+===
 
 The VAT is percentage represented by a decimal number between 0 and 1 with up to three decimals.
 
@@ -56,9 +51,8 @@ The VAT is percentage represented by a decimal number between 0 and 1 with up to
 which represents 12.5%.
 
 
-**************
 Shipping Rates
-**************
+==============
 
 The following shipping rates are allowed:
 

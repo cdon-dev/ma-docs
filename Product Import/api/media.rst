@@ -1,4 +1,3 @@
-###############
 Media Data Type
 ###############
 
@@ -9,9 +8,8 @@ The URL to post media data to is::
 	http://import.api.marketplace.cdon.com/media
 
 
-*************
 Data Contract
-*************
+=============
 
 The relevant schema files are the following:
 
@@ -21,15 +19,15 @@ The relevant schema files are the following:
 The last file is a supplement to the media.xsd, which define the media data structure.
 
 
-******************
+
 Product Variations
-******************
+==================
 
 Product elements in the product data type support variations of the same product (e.g. different colors of a product). In the media import, it is possible to assign different media to both the main product and/or the variation products.
 
 
 Product ID
-==========
+----------
 
 The media will, of course, be imported to the specified product ID.
 
@@ -37,7 +35,7 @@ If media is added to the main product, this media will be presented when the pro
 
 
 Multi-variations
-================
+----------------
 
 In cases where a product variant varies on two attributes at the same time, certain rules apply.
 
@@ -57,9 +55,9 @@ A beverage varies on **size** (e.g. 2dl, 5dl or 1 liter) and **flavor** (e.g. ba
 When the user has selected the flavor "banana", the picture displayed will not change until the user selects another size.
 
 
-****************
+
 Validation Rules
-****************
+================
 
 Every product must have exactly one main picture.
 

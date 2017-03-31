@@ -1,4 +1,3 @@
-##########
 Data Types
 ##########
 
@@ -14,16 +13,14 @@ These four types of data are fully independent from each other in the context of
 Although the data is separate from each other, all four types of data are constituents necessary to form a complete product. If any type is missing, the product will be **unavailable** until all product data requirements have been met. When all data is available, it will be compiled into a final product.
 
 
-*************
 Data Contract
-*************
+=============
 
 To facilitate a structured delivery of data, each set of data must fulfill a **data contract** that specify the structure of the data, expected data types and mandatory fields. If this contract is not met, the import process is unable to accept the data. The contracts are publicly available and can also be used as an acceptance test on the delivery before transmitting it to CDON Marketplace.
 
 
-**********
 Identities
-**********
+----------
 
 The product ID is the key that correlates all product data from different types.
 
@@ -40,7 +37,7 @@ Note that product IDs are **not case sensitive**, and only accepts certain chara
 
 
 Valid Identity Characters
-=========================
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following characters are allowed in an identity token:
 

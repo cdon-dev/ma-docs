@@ -1,4 +1,3 @@
-########
 Overview
 ########
 
@@ -21,9 +20,8 @@ The import process is a series of steps that data is passed through. During this
 Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated - unmodified data will be discarded early in the process.
 
 
-*******
 Support
-*******
+=======
 
 CDON Marketplace has its own customer service that gladly helps you with Marketplace related cases.
 
