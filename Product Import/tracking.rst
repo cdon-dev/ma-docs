@@ -12,7 +12,6 @@ The URL to the tracking-API is::
 
 
 .. _import-status:
-*************
 Import Status
 *************
 
