@@ -1,4 +1,3 @@
-########
 Tracking
 ########
 
@@ -13,7 +12,7 @@ The URL to the tracking-API is::
 
 .. _import-status:
 Import Status
-*************
+=============
 
 This is the equivalent of the "*is it done yet?*" question.
 
@@ -80,9 +79,8 @@ The response also contains static details about the ``Delivery`` (line 6), as we
 
 
 .. _import-summary:
-**************
 Import Summary
-**************
+==============
 
 The summary will list all products in the delivery, with a brief status of each product's progress. The foremost reason to use this endpoint is to gain swift access to what products have failed.
 
@@ -145,9 +143,8 @@ The *TrackingId* is the unique identifier for this particular event, whereas the
 
 
 .. _product-details:
-***************
 Product Details
-***************
+===============
 
 It is possible to retrieve the full tracking history for a product in a specific delivery. The purpose would be to in detail examine a product's journey through the import process to be able to identify the reason for a rejection and amend the data.
 
