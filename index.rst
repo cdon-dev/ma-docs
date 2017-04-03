@@ -22,6 +22,15 @@ CDON Marketplace
 	Product Import/validation
 	Product Import/tracking
 
+.. toctree::
+	:hidden:
+	:maxdepth: 2
+	:caption: Working with Orders
+
+	Working with Orders/index
+	Working with Orders/api/index
+
+
 
 Welcome to the documentation of the CDON Marketplace merchant integration!
 
