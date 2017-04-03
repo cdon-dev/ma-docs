@@ -23,8 +23,8 @@ Marketplace order API returns reponse codes to indicate what failed in your spec
 | Message               | string      | A short description of the error.                  |
 +-----------------------+-------------+----------------------------------------------------+
 
-
 The response body looks like this:
+
 .. code-block:: json
 	:emphasize-lines: 2
 
@@ -32,6 +32,7 @@ The response body looks like this:
 	  "ErrorCode": 1000,
 	  "Message": "Order does not exist"
 	}
+	
 
 
 The list of ``internal`` response codes is as follows:
