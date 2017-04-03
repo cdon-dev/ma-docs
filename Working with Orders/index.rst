@@ -7,6 +7,18 @@ When a customer buys something on CDON the order is saved, and sent to your spec
 The Marketplace support team can aid you if you have specific questions. We also have integration partners that have built modules for quite a few e-commerce platforms.
 
 
+Endpoints
+===========
+
+The base URL for the imports is as follows::
+
+	https://admin.marketplace.cdon.com/api/
+
+Append the name of the data type like so::
+
+	https://admin.marketplace.cdon.com/api/orderdelivery
+
+
 Error Codes
 ===========
 

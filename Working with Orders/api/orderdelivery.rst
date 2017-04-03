@@ -29,30 +29,6 @@ Request Example - json
 	
 
 
-Request Example - xml
-================
-
-.. code-block:: xml
-
-<DeliverOrderRowsCommand xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <OrderId>1</OrderId>
-  <Products>
-    <RowDelivery>
-      <OrderRowId>1</OrderRowId>
-      <QuantityToDeliver>2</QuantityToDeliver>
-      <PackageId>sample string 3</PackageId>
-      <PackageCarrierId>1</PackageCarrierId>
-    </RowDelivery>
-    <RowDelivery>
-      <OrderRowId>1</OrderRowId>
-      <QuantityToDeliver>2</QuantityToDeliver>
-      <PackageId>sample string 3</PackageId>
-      <PackageCarrierId>1</PackageCarrierId>
-    </RowDelivery>
-  </Products>
-</DeliverOrderRowsCommand>
-
-
 Request Attributes:
 ===================
 
@@ -84,110 +60,130 @@ This request returns an http status code, indicating how the call went, where th
 
 .. code-block:: json
 
-{
-  "OrderDetails": {
-    "OrderKey": "c6840daf-6163-45ef-adce-7f5e8d8f2afe-42277358",
-    "OrderId": 42277358,
-    "State": "Invoiced",
-    "PaymentStatus": "AwaitingPayment",
-    "CreatedDateUtc": "2014-02-07T19:22:48.5942457",
-    "LastModifiedDateUtc": "2014-02-07T19:22:48.5942457",
-    "MerchantId": "3b1addb2-2b6f-49bc-a185-2b5cfb445d66",
-    "CountryCode": "Sweden",
-    "CurrencyCode": "SEK",
-    "TotalAmount": 1495.0,
-    "TotalAmountExcludingVat": 1196.0,
-    "TotalSalesAmount": 1495.0,
-    "CustomerInfo": {
-      "CustomerId": 62880501,
-      "EmailAddress": "",
-      "ShippingAddress": {
-        "Name": "Testperson",
-        "StreetAddress": "Stårgatan 1xa",
-        "CoAddress": "",
-        "ZipCode": "12345",
-        "City": "Ankeborg",
-        "Country": "SE"
-      },
-      "BillingAddress": {
-        "Name": "Testperson",
-        "StreetAddress": "Stårgatan 1xa",
-        "CoAddress": "",
-        "ZipCode": "12345",
-        "City": "Ankeborg",
-        "Country": "SE"
-      },
-      "Phones": {
-        "PhoneMobile": "0703013319",
-        "PhoneWork": null,
-        "PhoneHome": null
-      }
-    },
-    "OrderRows": [
-      {
-        "OrderRowId": 1,
-        "FulfillmentStatus": "Invoiced",
-        "PaymentStatus": "AwaitingPayment",
-        "ProductId": "ART000494",
-        "ProductName": "Star wars",
-        "ProductType": "Article",
-        "Quantity": 1,
-        "DeliveredQuantity": 1,
-        "InvoicedQuantity": 1,
-        "CancelledQuantity": 0,
-		"ReturnedQuantity": 0,
-		"PickedQuantity": null,
-        "PricePerUnit": 1495.0,
-        "OrdinaryPricePerUnit": 1495.0,
-        "VatPerUnit": 299.0,
-        "VatPercentage": 25.0000,
-        "PackageId": "test",
-        "DebitedAmount": 1495.0,
-        "CreditedAmount": 0.0,
-        "PaidAmount": 0.0,
-        "RefundedAmount": 0.0,
-        "AddonToProductId": null
-      }
-    ],
-    "InvoiceNumbers": [
-      "1000052"
-    ],
-    "TotalVat": 299.0
-  },
-  "invoices": [
-    {
-      "Rows": [
-        {
-          "TotalPaymentAmount": 0.0,
-          "TotalCreditNoteAmount": 0.0,
-          "Status": "AwaitingPayment",
-          "InvoiceRowNumber": 1,
-          "OrderRowId": 1,
-          "ProductId": "ART000494",
-          "ProductName": "Star wars",
-          "ProductType": "Article",
-          "Quantity": 1,
-          "PricePerUnit": 1495.0,
-          "VatPerUnit": 299.0,
-          "VatPercentage": 25.0000,
-          "TotalAmount": 1495.0,
-          "TotalVat": 299.0
-        }
-      ],
-      "Status": "AwaitingPayment",
-      "Payments": null,
-      "InvoiceNumber": "1000052",
-      "MerchantId": "3b1addb2-2b6f-49bc-a185-2b5cfb445d66",
-      "OrderId": 42277358,
-      "CustomerId": 62880501,
-      "CreatedDateUtc": "2014-02-07T12:29:12.8663761Z",
-      "BookingDateUtc": "2014-02-07T12:29:12.8663761Z",
-      "TotalAmount": 1495.0,
-      "TotalVat": 299.0,
-      "CurrencyCode": "SEK"
-    }
-  ]
-}
+	{
+	  "OrderId": 1,
+	  "Products": [
+		{
+		  "OrderRowId": 1,
+		  "QuantityToDeliver": 2,
+		  "PackageId": "sample string 3",
+		  "PackageCarrierId": 1
+		},
+		{
+		  "OrderRowId": 1,
+		  "QuantityToDeliver": 2,
+		  "PackageId": "sample string 3",
+		  "PackageCarrierId": 1
+		}
+	  ]
+	}
+	
+.. code-block:: json
+
+	{
+	  "OrderDetails": {
+		 "OrderKey": "c6840daf-6163-45ef-adce-7f5e8d8f2afe-42277358",
+		 "OrderId": 42277358,
+		 "State": "Invoiced",
+		 "PaymentStatus": "AwaitingPayment",
+		 "CreatedDateUtc": "2014-02-07T19:22:48.5942457",
+		 "LastModifiedDateUtc": "2014-02-07T19:22:48.5942457",
+		 "MerchantId": "3b1addb2-2b6f-49bc-a185-2b5cfb445d66",
+		 "CountryCode": "Sweden",
+		 "CurrencyCode": "SEK",
+		 "TotalAmount": 1495.0,
+		 "TotalAmountExcludingVat": 1196.0,
+		 "TotalSalesAmount": 1495.0,
+		 "CustomerInfo": {
+		   "CustomerId": 62880501,
+		   "EmailAddress": "",
+		   "ShippingAddress": {
+		     "Name": "Testperson",
+		     "StreetAddress": "Stårgatan 1xa",
+		     "CoAddress": "",
+		     "ZipCode": "12345",
+		     "City": "Ankeborg",
+		     "Country": "SE"
+		   },
+		   "BillingAddress": {
+		     "Name": "Testperson",
+		     "StreetAddress": "Stårgatan 1xa",
+		     "CoAddress": "",
+		     "ZipCode": "12345",
+		     "City": "Ankeborg",
+		     "Country": "SE"
+		   },
+		   "Phones": {
+		     "PhoneMobile": "0703013319",
+		     "PhoneWork": null,
+		     "PhoneHome": null
+		   }
+		 },
+		 "OrderRows": [
+		 {
+		   "OrderRowId": 1,
+		   "FulfillmentStatus": "Invoiced",
+		   "PaymentStatus": "AwaitingPayment",
+		   "ProductId": "ART000494",
+		   "ProductName": "Star wars",
+		   "ProductType": "Article",
+		   "Quantity": 1,
+		   "DeliveredQuantity": 1,
+		   "InvoicedQuantity": 1,
+		   "CancelledQuantity": 0,
+		   "ReturnedQuantity": 0,
+		   "PickedQuantity": null,
+		   "PricePerUnit": 1495.0,
+		   "OrdinaryPricePerUnit": 1495.0,
+		   "VatPerUnit": 299.0,
+		   "VatPercentage": 25.0000,
+		   "PackageId": "test",
+		   "DebitedAmount": 1495.0,
+		   "CreditedAmount": 0.0,
+		   "PaidAmount": 0.0,
+		   "RefundedAmount": 0.0,
+		   "AddonToProductId": null
+		 }
+	],
+		 "InvoiceNumbers": [
+		   "1000052"
+		 ],
+		   "TotalVat": 299.0
+		 },
+		 "invoices": [
+		 {
+		   "Rows": [
+		 {
+		   "TotalPaymentAmount": 0.0,
+		   "TotalCreditNoteAmount": 0.0,
+		   "Status": "AwaitingPayment",
+		   "InvoiceRowNumber": 1,
+		   "OrderRowId": 1,
+		   "ProductId": "ART000494",
+		   "ProductName": "Star wars",
+		   "ProductType": "Article",
+		   "Quantity": 1,
+		   "PricePerUnit": 1495.0,
+		   "VatPerUnit": 299.0,
+		   "VatPercentage": 25.0000,
+		   "TotalAmount": 1495.0,
+		   "TotalVat": 299.0
+		 }
+		 ],
+		 "Status": "AwaitingPayment",
+		 "Payments": null,
+		 "InvoiceNumber": "1000052",
+		 "MerchantId": "3b1addb2-2b6f-49bc-a185-2b5cfb445d66",
+		 "OrderId": 42277358,
+		 "CustomerId": 62880501,
+		 "CreatedDateUtc": "2014-02-07T12:29:12.8663761Z",
+		 "BookingDateUtc": "2014-02-07T12:29:12.8663761Z",
+		 "TotalAmount": 1495.0,
+		 "TotalVat": 299.0,
+		 "CurrencyCode": "SEK"
+		 }
+	  ]
+	}
 	
 
 
