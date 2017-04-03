@@ -27,7 +27,6 @@ Error Codes
 Marketplace order API returns reponse codes to indicate what failed in your specific call to the order API. Unsuccessful responses (HTTP status code 400) return details about the error as an response object containing the following information:
 
 .. _table-order-error-codes:
-.. table:: Order Error Codes
 
 +-----------------------+-------------+----------------------------------------------------+
 | Key                   | Value Type  | Value Description                                  |
@@ -50,8 +49,7 @@ The response body looks like this:
 
 The list of ``internal`` response codes is as follows:
 
-.. _table-order-error-codes:
-.. table:: Order Error Codes
+.. _table-internal-order-error-codes:
 
 +-------------+----------------------------------------------------------------------+
 | ErrorCode   | Description                                                          |

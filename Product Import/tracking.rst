@@ -14,6 +14,7 @@ The URL to the tracking-API is::
 
 
 .. _tracking-import-status:
+
 Import Status
 =============
 
@@ -55,7 +56,6 @@ The response body may look similar to this:
 The most significant property is ``Status`` (line 2), which indicates the current import status.
 
 .. _table-import-status:
-.. table:: Import Statuses
 
 +-----------------------+-------------+-----------------------------------------------+--------------------+
 | Status                | Status Code | Description                                   | Processing Started |
@@ -86,6 +86,7 @@ The response also contains static details about the ``Delivery`` (line 6), as we
 
 
 .. _tracking-import-summary:
+
 Import Summary
 ==============
 
@@ -129,7 +130,6 @@ The response body may look similar to this:
 As seen above, the response contains a list of products, in which the ``Status`` (line 15) property is the most significant.
 
 .. _table-import-summary:
-.. table:: Product Statuses
 
 +-----------------------+-------------+-----------------------------------------------+
 | Status                | Status Code | Description                                   |
@@ -154,6 +154,7 @@ The *TrackingId* is the unique identifier for this particular event, whereas the
 
 
 .. _tracking-product-details:
+
 Product Details
 ===============
 
@@ -185,7 +186,7 @@ The response body may look similar to this:
 	  }
 	]
 
-As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`import-summary`.
+As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`tracking-import-summary`.
 
 
 

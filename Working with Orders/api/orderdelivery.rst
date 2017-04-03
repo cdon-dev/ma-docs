@@ -7,7 +7,7 @@ Order Delivery
 Order delivery is supposed to be called when the order or specific item has been sent to the customer. Hence this call marks specified orderrows as delivered. When all orderrows have been delivered an invoice is automatically created. Keep in mind that if there is a delivery fee associated with the order this will show up as a separate orderrow with the productid 'Postage'. This must also be set as delivered for the order to be considered fully delivered.
 
 
-Request Example - json
+Request Example - JSON
 ======================
 
 .. code-block:: json
@@ -32,11 +32,10 @@ Request Example - json
 
 
 
-Request Attributes:
-===================
+Request Attributes
+==================
 
 .. _table-order-request-attributes:
-.. table:: Request attributes
 
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 | Variable              | Type        | Description                                                                                        | Required   |
@@ -169,11 +168,10 @@ This request returns an http status code, indicating how the call went, where th
 
 
 
-Response Attributes:
-==============
+Response Attributes
+===================
 
 .. _table-order-response-attributes:
-.. table:: Order Response attributes
 
 +------------------------------+-------------+-----------------------------------------------------------------------------------------------------+
 | Variable                     | Type        | Description                                                                                         |
