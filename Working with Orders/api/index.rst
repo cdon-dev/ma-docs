@@ -11,3 +11,4 @@ API
 
 	orderdelivery
 	orderreturn
+	ordercancel
