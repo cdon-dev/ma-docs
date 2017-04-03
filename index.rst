@@ -1,4 +1,3 @@
-################
 CDON Marketplace
 ################
 
@@ -29,7 +28,6 @@ CDON Marketplace
 
 	Working with Orders/index
 	Working with Orders/api/index
-
 
 
 Welcome to the documentation of the CDON Marketplace merchant integration!

@@ -1,4 +1,6 @@
-########
+.. include:: ../toc_default.txt
+
+
 Overview
 ########
 
@@ -8,7 +10,7 @@ The Marketplace support team can aid you if you have specific questions. We also
 
 
 Endpoints
-===========
+=========
 
 The base URL for the imports is as follows::
 
@@ -43,7 +45,7 @@ The response body looks like this:
 	  "ErrorCode": 1000,
 	  "Message": "Order does not exist"
 	}
-	
+
 
 
 The list of ``internal`` response codes is as follows:
@@ -86,4 +88,3 @@ The list of ``internal`` response codes is as follows:
 +-------------+----------------------------------------------------------------------+
 | 3005        | There is no NPU charge to retract.                                   |
 +-------------+----------------------------------------------------------------------+
-

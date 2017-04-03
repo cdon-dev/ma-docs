@@ -1,3 +1,6 @@
+.. include:: ../../toc_default.txt
+
+
 Order Delivery
 ###############
 
@@ -26,7 +29,7 @@ Request Example - json
 		}
 	  ]
 	}
-	
+
 
 
 Request Attributes:
@@ -163,7 +166,7 @@ This request returns an http status code, indicating how the call went, where th
 		 }
 	  ]
 	}
-	
+
 
 
 Response Attributes:
@@ -287,5 +290,3 @@ Response Attributes:
 +------------------------------+--------------+----------------------------------------------------------------------------------------------------+
 | BookingDateUtc               | datetime     | Invoice booking date. The date the debt is booked.                                                 |
 +------------------------------+--------------+----------------------------------------------------------------------------------------------------+
-
-
