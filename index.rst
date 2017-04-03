@@ -15,11 +15,11 @@ CDON Marketplace
 	:caption: Product Import
 
 	Product Import/index
-	Product Import/api/index
 	Product Import/receipts
 	Product Import/data-types
 	Product Import/validation
 	Product Import/tracking
+	Product Import/api/index
 
 .. toctree::
 	:hidden:

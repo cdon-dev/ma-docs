@@ -1,6 +1,3 @@
-.. include:: ../../toc_default.txt
-
-
 Availability Data Type
 ######################
 
