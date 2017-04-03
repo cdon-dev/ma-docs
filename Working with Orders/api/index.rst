@@ -13,4 +13,5 @@ API
 	orderreturn
 	ordercancel
 	orderwritedown
+	orderinvoice
 	orderpackage
