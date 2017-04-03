@@ -26,7 +26,6 @@ Marketplace order API returns reponse codes to indicate what failed in your spec
 The response body looks like this:
 
 .. code-block:: json
-	:emphasize-lines: 2
 
 	{
 	  "ErrorCode": 1000,
