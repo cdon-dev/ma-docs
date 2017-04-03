@@ -57,27 +57,6 @@ Response Example - json:
 ========================
 This request returns an http status code, indicating how the call went, where the desired result is OK (200), including a comprehensive list of order details and invoice information.
 
-
-.. code-block:: json
-
-	{
-	  "OrderId": 1,
-	  "Products": [
-		{
-		  "OrderRowId": 1,
-		  "QuantityToDeliver": 2,
-		  "PackageId": "sample string 3",
-		  "PackageCarrierId": 1
-		},
-		{
-		  "OrderRowId": 1,
-		  "QuantityToDeliver": 2,
-		  "PackageId": "sample string 3",
-		  "PackageCarrierId": 1
-		}
-	  ]
-	}
-	
 .. code-block:: json
 
 	{
