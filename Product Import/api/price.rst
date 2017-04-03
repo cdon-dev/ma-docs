@@ -57,7 +57,6 @@ Shipping Rates
 The following shipping rates are allowed:
 
 .. _table-shipping-rates:
-.. table:: Valid Shipping Rates
 
 ====== ======= ====== =======
 Sweden Denmark Norway Finland
