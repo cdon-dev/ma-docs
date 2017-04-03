@@ -1,10 +1,10 @@
 .. include:: ../../toc_default.txt
 
 
-Order Cancel
+Order Write down
 ###############
 
-Order cancel is supposed to be called when the order or specific item cannot be delivered. The reason for failed delivery could be out of stock or customers active choice to no longer desire the item.
+Order write-down is used to give compensation to customers. Reasons may vary and each Merchant responsible for their reasons to grant compensation.
 
 
 Request Example - JSON
@@ -17,11 +17,13 @@ Request Example - JSON
 	  "Rows": [
 		{
 		  "OrderRowId": 1,
-		  "QuantityToCancel": 2
+		  "QuantityToWriteDown": 2,
+		  "WriteDownAmountPerItem": 3.0
 		},
 		{
 		  "OrderRowId": 2,
-		  "QuantityToDeliver": 2
+		  "QuantityToWriteDown": 2,
+		  "WriteDownAmountPerItem": 3.0
 		}
 	  ]
 	}
@@ -40,7 +42,9 @@ Request Attributes
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 | OrderRowId            | integer     | Refers to the order row associated to a specific order.                                            | Yes        |
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
-| QuantityToCancel      | integer     | Indicates how many products you intend to set as cancelled for the specific order row.             | Yes        |
+| QuantityToWriteDown   | integer     | Indicates how many products you intend to write-down for the specific order row.                   | Yes        |
++-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
+| WriteDownAmountPerItem| decimal     | The amount you write down per item.                                                                | Yes        |
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 
 

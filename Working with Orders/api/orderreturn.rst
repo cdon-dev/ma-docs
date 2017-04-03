@@ -40,7 +40,7 @@ Request Attributes
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 | OrderRowId            | integer     | Refers to the order row associated to a specific order.                                            | Yes        |
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
-| QuiantityToReturn     | integer     | Indicates how many products you intend to set as delivered for the specific order row.             | Yes        |
+| QuiantityToReturn     | integer     | Indicates how many products you intend to set as returned for the specific order row.              | Yes        |
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 
 

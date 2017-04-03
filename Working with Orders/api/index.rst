@@ -12,3 +12,4 @@ API
 	orderdelivery
 	orderreturn
 	ordercancel
+	orderwritedown
