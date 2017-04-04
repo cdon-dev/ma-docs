@@ -15,3 +15,4 @@ API
 	orderwritedown
 	orderinvoice
 	orderpackage
+	orderdeliverynote
