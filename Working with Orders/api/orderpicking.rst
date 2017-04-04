@@ -44,8 +44,8 @@ Request Attributes
 +-----------------------+-------------+----------------------------------------------------------------------------------------------------+------------+
 
 
-Response Example - json:
-========================
+Response Example - JSON
+=======================
 This request returns an http status code, indicating how the call went, where the desired result is OK (200), including a comprehensive list of order details and invoice information.
 
 .. code-block:: json

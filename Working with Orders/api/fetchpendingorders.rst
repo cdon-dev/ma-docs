@@ -11,9 +11,11 @@ Request Example
 
 GET api/order/{parameters}
 
-	 | GET https://admin.marketplace.cdon.com/api/order/?CountryCode=Denmark&DateTimeRangeMin=2017-02-23&DateTimeRangeMax=2017-03-10 HTTP/1.1
-	 | Accept: application/json
-	 | Authorization: api <apiKey>
+.. code-block:: none
+
+	 GET https://admin.marketplace.cdon.com/api/order/?CountryCode=Denmark&DateTimeRangeMin=2017-02-23&DateTimeRangeMax=2017-03-10 HTTP/1.1
+	 Accept: application/json
+	 Authorization: api <apiKey>
 
 
 

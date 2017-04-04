@@ -8,11 +8,9 @@ Importing products to CDON Marketplace is an asynchronous process, meaning that 
 
 Example of a receipt:
 
-.. code-block:: json
+.. code-block:: none
 
-	{
-	  "receiptId": "00b24f3a93124da7aec34447124e5aa1"
-	}
+	  00b24f3a93124da7aec34447124e5aa1
 
 The receipt is a unique 32-character long string associated with a **single** delivery.
 
