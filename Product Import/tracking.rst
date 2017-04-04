@@ -31,6 +31,7 @@ If the delivery cannot be found, the response HTTP status code is `404`_. Otherw
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 2
 
 	{
@@ -51,7 +52,6 @@ The response body may look similar to this:
 	    "Failed": 1
 	  }
 	}
-
 
 The most significant property is ``Status`` (line 2, and as an integer for system integration in the property ``StatusCode``), which indicates the current :doc:`import status <trackingimportstatus>`.
 
@@ -75,6 +75,7 @@ If the delivery cannot be found or the data has not yet been received, the respo
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 15,17,18
 
 	{
@@ -124,6 +125,7 @@ If the delivery cannot be found or no events have been recorded for that particu
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 4,5
 
 	[
@@ -158,7 +160,3 @@ Status Code Enumerations
 .. _200: https://httpstatuses.com/200
 .. _404: https://httpstatuses.com/404
 .. _500: https://httpstatuses.com/500
-
-
-.. highlight:: json
-	:linenothreshold: 5
