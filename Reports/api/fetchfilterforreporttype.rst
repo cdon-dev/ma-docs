@@ -1,16 +1,16 @@
 .. include:: ../../toc_default.txt
 
 
-Fetch filter for report type
-###############
+Fetch Filter for Report Type
+############################
 
 | GET api/reports/{reportId}
 | Gets the available parameters for the report with the specifed reportId.
 
 
 
-Response Example - json:
-========================
+Response Example - JSON
+=======================
 
 .. code-block:: json
 
@@ -99,9 +99,9 @@ The “Parameters”-array contains several the types of parameters available an
 In the above example (which is for the order report api) we see that we can filter the report to contain Swedish or Danish orders and also on the state of the order (Invoiced, Returned or Cancelled). We also see how many orders there are that match the different filter values. For example, there are 100 Swedish orders and 30 orders that have Returned as the state. In the Formats-section we see that the available formats for the report is Excel, JSON and XML. For more information on how to use this information to generate a report see the documentation for POST api/reports.
 
 
-Code Example C#
-========================
-Below you can find a method that calls the GET api to get the details of how to generate a specific report. 
+Code Example - C#
+=================
+Below you can find a method that calls the GET api to get the details of how to generate a specific report.
 The method takes the path to the API, i.e. /api/reports, and the reportId of the report that you wish to get parameter details for as arguments.
 
 

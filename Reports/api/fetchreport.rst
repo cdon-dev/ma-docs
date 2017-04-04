@@ -1,8 +1,8 @@
 .. include:: ../../toc_default.txt
 
 
-Fetch report
-###############
+Fetch Report
+############
 
 In order to generate a report you perform a POST call to the reports API with the parameters you wish to use for the report. The call must also include the fields ReportId and Format for the type of report you wish to generate and the format of the report.
 
@@ -21,9 +21,7 @@ From the call to GET api/reports/d4ea173d-bfbc-48f5-b121-60f1a5d35a34 you know t
 	}
 
 
-You then post the parameters as form data (content-type: application/x-www-form-urlencoded) so the request body would look like this:
-
-.. code-block:: json
+You then post the parameters as form data (content-type: application/x-www-form-urlencoded) so the request body would look like this::
 
 	ReportId=d4ea173d-bfbc-48f5-b121-60f1a5d35a34&format=json&filter={"CountryCodes":["Sweden"],"States":["2","3"]}
 
@@ -31,7 +29,7 @@ Note that not specifying a parameter is the same as specifying all the values fo
 
 
 Order Report Attributes
-==================
+=======================
 
 Below we list some the filter parameters for the order API that have static values and what those values are.
 
@@ -62,10 +60,10 @@ Below we list some the filter parameters for the order API that have static valu
 +-----------------------+-------------+------------------------------------------------------------------------------------------------+
 
 
-Code Example C#
-========================
+Code Example - C#
+=================
 
-Below you can find an example of a method that calls the POST api to get a report of pending orders. 
+Below you can find an example of a method that calls the POST api to get a report of pending orders.
 The method takes the path to the API, i.e. /api/reports, and the reportId of the kind of report to generate.
 
 
@@ -92,4 +90,3 @@ The method takes the path to the API, i.e. /api/reports, and the reportId of the
 
 	  return response.Content.ReadAsStringAsync().Result;
 	}
-

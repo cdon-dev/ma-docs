@@ -1,21 +1,24 @@
 .. include:: ../../toc_default.txt
 
 
-Fetch order
-###############
+Fetch Order
+###########
 
 Order API provides you the ability to perform different actions from your own ERP system or perhaps your ecommerce software, allowing the flexibility to completely integrate it in your preferred system.
 
 
-GET api/order/{id} - Request Example
-======================
+Request Example
+===============
+
+GET api/order/{id}
+
 	 | GET https://admin.marketplace.cdon.com/api/order/111111 HTTP/1.1
 	 | Accept: application/json
 	 | Authorization: api <apiKey>
-	 
 
-Response Example - json:
-========================
+
+Response Example - JSON
+=======================
 This request returns an http status code, indicating how the call went, where the desired result is OK (200), including a comprehensive list of order details and invoice information.
 
 .. code-block:: json

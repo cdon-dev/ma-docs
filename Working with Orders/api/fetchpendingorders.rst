@@ -1,13 +1,15 @@
 .. include:: ../../toc_default.txt
 
 
-Fetch pending orders
-###############
+Fetch Pending Orders
+####################
 
 Retrieve a list of orders by providing filter paramaters.
 
-GET api/order/{parameters} - Request Example
-======================
+Request Example
+===============
+
+GET api/order/{parameters}
 
 	 | GET https://admin.marketplace.cdon.com/api/order/?CountryCode=Denmark&DateTimeRangeMin=2017-02-23&DateTimeRangeMax=2017-03-10 HTTP/1.1
 	 | Accept: application/json
@@ -15,8 +17,8 @@ GET api/order/{parameters} - Request Example
 
 
 
-Response Example - json:
-========================
+Response Example - JSON
+=======================
 This request returns an http status code, indicating how the call went, where the desired result is OK (200), including a comprehensive list of order details and invoice information.
 
 .. code-block:: json

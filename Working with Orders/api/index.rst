@@ -18,4 +18,5 @@ API
 	orderinvoice
 	orderpackage
 	orderdeliverynote
+	orderreturnaddress
 	orderpicking

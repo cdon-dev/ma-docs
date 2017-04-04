@@ -1,8 +1,8 @@
 .. include:: ../../toc_default.txt
 
 
-Order Write down
-###############
+Order Write-down
+################
 
 Order write-down is used to give compensation to customers. Reasons may vary and each Merchant responsible for their reasons to grant compensation.
 

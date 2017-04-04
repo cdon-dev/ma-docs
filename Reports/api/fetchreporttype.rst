@@ -1,14 +1,14 @@
 .. include:: ../../toc_default.txt
 
 
-Fetch order report type
-###############
+Fetch Order Report Type
+#######################
 
 Gets a list of available report types.
 
 
 Response Attributes
-==================
+===================
 
 .. _table-report-response-attributes:
 
@@ -24,8 +24,8 @@ Response Attributes
 
 
 
-Response Example - json:
-========================
+Response Example - JSON
+=======================
 
 .. code-block:: json
 
@@ -46,7 +46,7 @@ The ReportId is used when calling the other report APIs.
 
 
 Code Example C#
-========================
+===============
 
 .. code-block:: csharp
 

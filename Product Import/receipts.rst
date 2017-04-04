@@ -10,7 +10,9 @@ Example of a receipt:
 
 .. code-block:: json
 
-	"receiptId": "00b24f3a93124da7aec34447124e5aa1"
+	{
+	  "receiptId": "00b24f3a93124da7aec34447124e5aa1"
+	}
 
 The receipt is a unique 32-character long string associated with a **single** delivery.
 
