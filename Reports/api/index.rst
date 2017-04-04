@@ -10,3 +10,4 @@ API
 	:caption: Reports
 
 	fetchreporttype
+	fetchfilterforreporttype
