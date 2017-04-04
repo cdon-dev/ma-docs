@@ -30,6 +30,15 @@ CDON Marketplace
 	Working with Orders/api/index
 
 
+.. toctree::
+	:hidden:
+	:maxdepth: 2
+	:caption: Reports
+
+	Working with Reports/index
+	Working with Reports/api/index
+
+
 Welcome to the documentation of the CDON Marketplace merchant integration!
 
 Marketplace has a number of **APIs** for system integration, and also an **administration** page for manual management.

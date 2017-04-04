@@ -7,7 +7,7 @@ API
 .. toctree::
 	:hidden:
 	:maxdepth: 2
-	:caption: Product Import
+	:caption: Working with orders
 
 	fetchorder
 	fetchpendingorders
