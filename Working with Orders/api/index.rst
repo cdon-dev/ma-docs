@@ -10,6 +10,7 @@ API
 	:caption: Product Import
 
 	fetchorder
+	fetchpendingorders
 	orderdelivery
 	orderreturn
 	ordercancel
