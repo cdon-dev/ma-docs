@@ -53,34 +53,7 @@ The response body may look similar to this:
 	}
 
 
-The most significant property is ``Status`` (line 2), which indicates the current import status.
-
-.. _table-import-status:
-
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| Status                | Status Code | Description                                   | Processing Started |
-+=======================+=============+===============================================+====================+
-| NoContent             | 1           | The delivery was empty.                       | No                 |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| Receiving             | 2           | The delivery is still being received.         | Yes                |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| IngestionFailure      | 3           | Something went wrong when receiving the       | Yes                |
-|                       |             | delivery. This is also indicated by the HTTP  |                    |
-|                       |             | status code `500`_.                           |                    |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| Queued                | 4           | All data has been received, but processing    | No                 |
-|                       |             | has not yet started.                          |                    |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| Processing            | 5           | Processing has begun, and there are still     | Yes                |
-|                       |             | products to process.                          |                    |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| CompletedSuccessfully | 6           | All products have been successfully imported! | Yes                |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-| CompletedWithErrors   | 7           | All products have been processed, but some    | Yes                |
-|                       |             | (or all) failed to be imported.               |                    |
-+-----------------------+-------------+-----------------------------------------------+--------------------+
-
-Statuses marked with *Processing Started* indicate that there **may** be products which have been processed.
+The most significant property is ``Status`` (line 2, and as an integer for system integration in the property ``StatusCode``), which indicates the current :doc:`import status <trackingimportstatus>`.
 
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
@@ -127,26 +100,7 @@ The response body may look similar to this:
 	  ]
 	}
 
-As seen above, the response contains a list of products, in which the ``Status`` (line 15) property is the most significant.
-
-.. _table-import-summary:
-
-+-----------------------+-------------+-----------------------------------------------+
-| Status                | Status Code | Description                                   |
-+=======================+=============+===============================================+
-| Queued                | 1           | Still waiting to be imported.                 |
-+-----------------------+-------------+-----------------------------------------------+
-| Processing            | 2           | The import process is ongoing for this        |
-|                       |             | product.                                      |
-+-----------------------+-------------+-----------------------------------------------+
-| Imported              | 3           | The product has been successfully imported!   |
-+-----------------------+-------------+-----------------------------------------------+
-| PartiallyImported     | 4           | Some of the data has been imported and others |
-|                       |             | has been discarded.                           |
-+-----------------------+-------------+-----------------------------------------------+
-| Failed                | 5           | This product has been rejected for some       |
-|                       |             | reason.                                       |
-+-----------------------+-------------+-----------------------------------------------+
+As seen above, the response contains a list of products, in which the ``Status`` (line 15, and as an integer for system integration in the property ``StatusCode``) property is the most significant. It indicates the current :doc:`product status <trackingproductstatus>`.
 
 The product element also contains two more vital properties: ``TrackingId`` (line 17) and ``TrackingCode`` (line 18).
 
@@ -187,6 +141,16 @@ The response body may look similar to this:
 	]
 
 As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`tracking-import-summary`.
+
+
+Status Code Enumerations
+========================
+
+.. toctree::
+	:maxdepth: 1
+
+	trackingimportstatus
+	trackingproductstatus
 
 
 
