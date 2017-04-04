@@ -35,8 +35,8 @@ CDON Marketplace
 	:maxdepth: 2
 	:caption: Reports
 
-	Working with Reports/index
-	Working with Reports/api/index
+	Reports/index
+	Reports/api/index
 
 
 Welcome to the documentation of the CDON Marketplace merchant integration!
