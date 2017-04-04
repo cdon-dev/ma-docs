@@ -9,6 +9,7 @@ To use the Delivery Note API you first need to register a return address in the 
 Request Example
 ======================
 	GET https://admin.marketplace.cdon.com/api/returnaddress HTTP/1.1
+	
 	Accept: application/json
 	Authorization: api <apiKey>
 

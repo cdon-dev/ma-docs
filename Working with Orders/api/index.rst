@@ -16,3 +16,4 @@ API
 	orderinvoice
 	orderpackage
 	orderdeliverynote
+	orderpicking
