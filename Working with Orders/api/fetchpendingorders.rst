@@ -8,9 +8,10 @@ Retrieve a list of orders by providing filter paramaters.
 
 GET api/order/{parameters} - Request Example
 ======================
-	 GET https://admin.marketplace.cdon.com/api/order/?CountryCode=Denmark&DateTimeRangeMin=2017-02-23&DateTimeRangeMax=2017-03-10 HTTP/1.1
-	 Accept: application/json
-	 Authorization: api <apiKey>
+
+	 | GET https://admin.marketplace.cdon.com/api/order/?CountryCode=Denmark&DateTimeRangeMin=2017-02-23&DateTimeRangeMax=2017-03-10 HTTP/1.1
+	 | Accept: application/json
+	 | Authorization: api <apiKey>
 
 
 

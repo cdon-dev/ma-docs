@@ -9,9 +9,9 @@ Order API provides you the ability to perform different actions from your own ER
 
 GET api/order/{id} - Request Example
 ======================
-	 GET https://admin.marketplace.cdon.com/api/order/111111 HTTP/1.1
-	 Accept: application/json
-	 Authorization: api <apiKey>
+	 | GET https://admin.marketplace.cdon.com/api/order/111111 HTTP/1.1
+	 | Accept: application/json
+	 | Authorization: api <apiKey>
 	 
 
 Response Example - json:
