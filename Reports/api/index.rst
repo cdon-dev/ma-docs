@@ -11,3 +11,4 @@ API
 
 	fetchreporttype
 	fetchfilterforreporttype
+	fetchreport

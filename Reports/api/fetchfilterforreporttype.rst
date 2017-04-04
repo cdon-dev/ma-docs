@@ -4,8 +4,8 @@
 Fetch filter for report type
 ###############
 
-GET api/reports/{reportId}
-Gets the available parameters for the report with the specifed reportId.
+| GET api/reports/{reportId}
+| Gets the available parameters for the report with the specifed reportId.
 
 
 
