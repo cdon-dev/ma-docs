@@ -9,6 +9,7 @@ API
 	:maxdepth: 2
 	:caption: Product Import
 
+	fetchorder
 	orderdelivery
 	orderreturn
 	ordercancel
