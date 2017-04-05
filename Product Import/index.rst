@@ -7,24 +7,31 @@ Overview
 
 By exporting your inventory to CDON Marketplace, your products will be added to the CDON product catalog, which makes them available to CDON's customers.
 
-In the CDON Marketplace import process, there are two vital key concepts; **data types** and **receipts**. Data is accepted in different :doc:`types <data-types>` to populate a product with necessary information, whereas the :doc:`receipt <receipts>` is used to track the progress of the import. The diagram below illustrates the main concept of a delivery.
+In the CDON Marketplace import process, there are two vital key concepts; **data types** and **receipts**. Deliveries are made with different :doc:`types of data <data-types>`, which populate a product with all necessary information. The :doc:`receipt <receipts>` is used to keep track on the progress of the import.
 
 .. image:: overview.png
    :alt: Conceptual Overview
 
-The different :doc:`data types <data-types>` are imported separately. When all data is available, the final product is assembled and added to the product catalog.
+Each delivery is imported separately. When data of all types is available, the final product is assembled and added to the product catalog for presentation.
+
+.. image:: assembly.png
+   :alt: Data Assembly
+
+The import process is a series of steps that data is passed through. During this process, the data is validated and may be modified according to the current business rules.
+
+.. image:: process.png
+	:alt: Import Process
+
 
 Deliveries containing multiple products are split up into individual products, which in turn are imported independently from each other.
 
-.. caution::
-	An inventory import is **greedy**, which means that any and all products that **can** be imported **will** be imported.
-
-The import process is a series of steps that data is passed through. During this process, the data may be validated and modified according to the current business rules.
-
-.. image:: process.png
-   :alt: Import Process
+.. image:: separation.png
+   :alt: Product Separation
 
 Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated |mdash| unmodified data will be discarded early in the process.
+
+.. caution::
+	An inventory import is **greedy**, which means that any and all products that **can** be imported **will** be imported.
 
 
 Support
