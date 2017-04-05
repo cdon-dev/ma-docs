@@ -1,4 +1,6 @@
-########
+.. include:: ../toc_default.txt
+
+
 Tracking
 ########
 
@@ -11,10 +13,10 @@ The URL to the tracking-API is::
 	http://tracking-import.api.marketplace.cdon.com
 
 
-.. _import-status:
-*************
+.. _tracking-import-status:
+
 Import Status
-*************
+=============
 
 This is the equivalent of the "*is it done yet?*" question.
 
@@ -29,6 +31,7 @@ If the delivery cannot be found, the response HTTP status code is `404`_. Otherw
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 2
 
 	{
@@ -50,40 +53,15 @@ The response body may look similar to this:
 	  }
 	}
 
-
-The most significant property is ``Status`` (line 2), which indicates the current import status:
-
-* **No Content**
-
-  The delivery was empty.
-* **Receiving** (\*)
-
-  The delivery is still being received.
-* **Ingestion Failure** (\*)
-
-  Something went wrong when receiving the delivery. This is also indicated by the HTTP status code `500`_.
-* **Queued**
-
-  All data has been received, but processing has not yet started.
-* **Processing**
-
-  Processing has begun, and there are still products to process.
-* **Completed Successfully**
-
-  All products have been successfully imported!
-* **Completed With Errors**
-
-  All products have been processed, but some (or all) failed to be imported.
-
-Statuses marked with an asterisk (\*) **may** have products that have been processed.
+The most significant property is ``Status`` (line 2, and as an integer for system integration in the property ``StatusCode``), which indicates the current :doc:`import status <trackingimportstatus>`.
 
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 
 
-.. _import-summary:
-**************
+.. _tracking-import-summary:
+
 Import Summary
-**************
+==============
 
 The summary will list all products in the delivery, with a brief status of each product's progress. The foremost reason to use this endpoint is to gain swift access to what products have failed.
 
@@ -97,6 +75,7 @@ If the delivery cannot be found or the data has not yet been received, the respo
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 15,17,18
 
 	{
@@ -122,33 +101,17 @@ The response body may look similar to this:
 	  ]
 	}
 
-As seen above, the response contains a list of products, in which the ``Status`` (line 15) property is the most significant.
-
-* **Queued**
-
-  Still waiting to be imported.
-* **Processing**
-
-  The import process is ongoing for this product.
-* **Imported**
-
-  The product has been successfully imported!
-* **Partially Imported**
-
-  Some of the data has been imported and others has been discarded.
-* **Failed**
-
-  This product has been rejected for some reason.
+As seen above, the response contains a list of products, in which the ``Status`` (line 15, and as an integer for system integration in the property ``StatusCode``) property is the most significant. It indicates the current :doc:`product status <trackingproductstatus>`.
 
 The product element also contains two more vital properties: ``TrackingId`` (line 17) and ``TrackingCode`` (line 18).
 
 The *TrackingId* is the unique identifier for this particular event, whereas the *TrackingCode* is a code identifying the event type (similar to an error code). Please make sure to provide these two properties if contacting support, as they help pin-point the exact event and reason for something going wrong.
 
 
-.. _product-details:
-***************
+.. _tracking-product-details:
+
 Product Details
-***************
+===============
 
 It is possible to retrieve the full tracking history for a product in a specific delivery. The purpose would be to in detail examine a product's journey through the import process to be able to identify the reason for a rejection and amend the data.
 
@@ -162,6 +125,7 @@ If the delivery cannot be found or no events have been recorded for that particu
 The response body may look similar to this:
 
 .. code-block:: json
+	:linenos:
 	:emphasize-lines: 4,5
 
 	[
@@ -178,7 +142,17 @@ The response body may look similar to this:
 	  }
 	]
 
-As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`import-summary`.
+As seen above, the response is an array of events (shortened here for brevity). Notice that ``TrackingId`` (line 4) and ``TrackingCode`` (line 5) are the same properties as in the :ref:`tracking-import-summary`.
+
+
+Status Code Enumerations
+========================
+
+.. toctree::
+	:maxdepth: 1
+
+	trackingimportstatus
+	trackingproductstatus
 
 
 
@@ -186,7 +160,3 @@ As seen above, the response is an array of events (shortened here for brevity). 
 .. _200: https://httpstatuses.com/200
 .. _404: https://httpstatuses.com/404
 .. _500: https://httpstatuses.com/500
-
-
-.. highlight:: json
-	:linenothreshold: 5

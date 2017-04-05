@@ -1,4 +1,3 @@
-######################
 Availability Data Type
 ######################
 
@@ -16,9 +15,8 @@ The URL to post availability data to is::
 	http://import.api.marketplace.cdon.com/availability
 
 
-*************
 Data Contract
-*************
+=============
 
 The relevant schema files are the following:
 
@@ -28,8 +26,7 @@ The relevant schema files are the following:
 The last file is a supplement to the availability.xsd, which define the availability data structure.
 
 
-****************
 Validation Rules
-****************
+================
 
 The delivery time is a range in number of days, where the minimum value may not be greater than the maximum value.

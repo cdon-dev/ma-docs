@@ -1,4 +1,6 @@
-#######
+.. include:: toc_default.txt
+
+
 Markets
 #######
 
