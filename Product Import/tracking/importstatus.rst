@@ -8,13 +8,26 @@ Import Status
 
 This is the equivalent of the "*is it done yet?*" question.
 
+The **import status** is an aggregate of the status of **all** products in the delivery.
+
 Since the import process is asynchronous, this query will have to be polled every now and then to eventually get the answer when all products have been processed.
+
+
+Request
+=======
 
 The following endpoint accepts the receipt ID to provide an overall status of that delivery::
 
 	/import/<receiptId>/status
 
-If the delivery cannot be found, the response HTTP status code is `404`_. Otherwise, the code should be `200`_.
+The following HTTP status codes can be expected:
+
+* `200`_, accompanied with the response body described below
+* `404`_, when the delivery cannot be found
+
+
+Response
+========
 
 The response body may look similar to this:
 
@@ -41,7 +54,9 @@ The response body may look similar to this:
 	  }
 	}
 
-The most significant property is ``Status`` (line 2, and as an integer for system integration in the property ``StatusCode``), which indicates the current :doc:`import status <importstatuscode>`.
+The most significant property is ``Status`` (line 2), which indicates the current overall **import status**.
+It is also reflected as the integer in the property ``StatusCode`` (line 3) to facilitate system integration.
+These two properties are populated by a value from the :doc:`import status enumeration <importstatuscode>`.
 
 The response also contains static details about the ``Delivery`` (line 6), as well as import progress information (line 13).
 

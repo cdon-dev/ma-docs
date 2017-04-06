@@ -15,6 +15,9 @@ These four types of data are fully independent from each other in the context of
 
 Although the data is separate from each other, all four types of data are constituents necessary to form a complete product. If any type is missing, the product will be **unavailable** until all product data requirements have been met. When all data is available, it will be compiled into a final product.
 
+.. image:: assembly.png
+	:alt: Data Assembly
+
 
 Data Contract
 =============
