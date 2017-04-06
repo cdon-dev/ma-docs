@@ -8,7 +8,7 @@ Deliveries are made to Marketplace by posting **XML**-formatted data to the endp
 
 Responses are returned with a HTTP status code and possibly a body in **JSON**-format.
 
-Each delivery that is acceptable (according to the data contract) receives a :doc:`receipt <../receipts>`. Make sure to store this, as it is the key to :doc:`tracking <../tracking>` the progress of the delivery.
+Each delivery that is acceptable (according to the data contract) receives a :doc:`receipt <../receipts>`. Make sure to store this, as it is the key to :doc:`tracking <../tracking/index>` the progress of the delivery.
 
 
 Data Contracts

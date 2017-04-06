@@ -18,7 +18,7 @@ CDON Marketplace
 	Product Import/receipts
 	Product Import/data-types
 	Product Import/validation
-	Product Import/tracking
+	Product Import/tracking/index
 	Product Import/api/index
 
 .. toctree::
