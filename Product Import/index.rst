@@ -10,23 +10,22 @@ By exporting your inventory to CDON Marketplace, your products will be added to 
 In the CDON Marketplace import process, there are two vital key concepts; **data types** and **receipts**. Deliveries are made with different :doc:`types of data <data-types>`, which populate a product with all necessary information. The :doc:`receipt <receipts>` is used to keep track on the progress of the import.
 
 .. image:: overview.png
-   :alt: Conceptual Overview
+	:alt: Conceptual Overview
 
 Each delivery is imported separately. When data of all types is available, the final product is assembled and added to the product catalog for presentation.
 
 .. image:: assembly.png
-   :alt: Data Assembly
+	:alt: Data Assembly
 
 The import process is a series of steps that data is passed through. During this process, the data is validated and may be modified according to the current business rules.
 
 .. image:: process.png
 	:alt: Import Process
 
-
 Deliveries containing multiple products are split up into individual products, which in turn are imported independently from each other.
 
 .. image:: separation.png
-   :alt: Product Separation
+	:alt: Product Separation
 
 Products that fail validation are naturally not imported, but will not abort the entire delivery. Only products whose content has changed (since the last import) will be updated |mdash| unmodified data will be discarded early in the process.
 
@@ -39,11 +38,11 @@ Support
 
 CDON Marketplace has its own customer service that gladly helps you with Marketplace related cases.
 
-When contacting support, please provide the following information, if available:
+When contacting support, please provide the following information when available:
 
 * Merchant ID
 * Receipt ID (see :doc:`receipts <receipts>`)
-* Tracking ID (see :doc:`tracking <tracking>`)
-* Tracking Code (see :doc:`tracking <tracking>`)
+* Tracking ID (see :doc:`tracking <tracking/index>`)
+* Tracking Code (see :doc:`tracking <tracking/index>`)
 
 Those details will help giving a more accurate diagnosis with technical matters.
