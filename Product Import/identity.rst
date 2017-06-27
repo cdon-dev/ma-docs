@@ -13,7 +13,7 @@ All four :doc:`data types <data-types>` specify the product key by using the the
 Model Product and Variations
 ============================
 
-The *model product* must always have its own **unique** key, regardless of whether it has any variations or not.
+The *model product* (see :ref:`product`) must always have its own **unique** key, regardless of whether it has any variations or not.
 
 If the product has any variations, each variation is obligated to have its own unique product key.
 

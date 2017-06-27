@@ -37,6 +37,33 @@ Products that fail validation are naturally not imported, but will not abort the
 	An inventory import is **greedy**, which means that any and all products that **can** be imported **will** be imported.
 
 
+.. _product:
+
+The Product
+===========
+
+The concept of a *product* is manifested by two types:
+
+Simple Product
+	A single, indivisible product, i.e. a "regular" product.
+
+Product with Variations
+	Multiple products that are considered "the same", but varies on a specific property.
+
+It is important to understand the distinction between these. A variation product is e.g. a beverage with different flavor variants, or a t-shirt in different sizes, etc. Correctly defining a product makes it easier for the customer to find and buy the product.
+
+
+Variation Products
+------------------
+
+If the product has variations, the "parent" product is called the **model product**.
+
+The model product is the common denominator which attributes shared properties to the variation products and creates the context which relates all variations to each other.
+
+It is not possible to buy the model product, but it invites the customer to decide on one of its variations.
+
+
+
 Support
 =======
 
