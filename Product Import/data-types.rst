@@ -22,42 +22,14 @@ Although the data is separate from each other, all four types of data are consti
 Data Contract
 =============
 
-To facilitate a structured delivery of data, each set of data must fulfill a **data contract** that specify the structure of the data, expected data types and mandatory fields. If this contract is not met, the import process is unable to accept the data. The contracts are publicly available and can also be used as an acceptance test on the delivery before transmitting it to CDON Marketplace.
+To facilitate a structured delivery of data, each set of data must fulfill a **data contract** that specify the structure of the data, expected data types and mandatory fields. If this contract is not met, the import process is unable to accept the data.
 
+The contracts are made publicly available at this location:
 
-Identities
-==========
+http://schemas.cdon.com/marketplace/
 
-The product ID is the key that correlates all product data from different types.
+These contracts can with advantage be used as an acceptance test on the delivery before transmitting it to CDON Marketplace.
 
-A valid product ID is 1 |--| 40 characters long, and only accepts certain characters (see below).
-
-.. ATTENTION::
-	No check will be done to identify duplicate (and possibly conflicting) product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
-
-Note that product IDs are **not case sensitive**! For example, the following IDs are all considered equal::
-
-	Product_A
-	product_a
-	PRODUCT_A
-	pRoDuCt_A
-
-
-
-Valid Identity Characters
--------------------------
-
-The following characters are allowed in an identity token:
-
-* a-z
-* A-Z
-* 0-9
-* \\ (backslash)
-* \- (hyphen)
-* \_ (underscore)
-
-
-
-
-.. |--| unicode:: U+2013  .. en dash, trimming surrounding whitespace
-   :trim:
+.. IMPORTANT::
+	Not all business rules are enforced by the contract.
+	As the contract is primarily a data structure contract, higher order business rules are not validated until processing begins.
