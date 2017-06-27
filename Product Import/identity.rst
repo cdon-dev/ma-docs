@@ -27,7 +27,7 @@ For the product data types :doc:`availability <api/availability>`, :doc:`media <
 The Product Data Type
 =====================
 
-The :doc:`product data type <api/product>` has encapsulated the :xml:`<id>` element inside an :xml:`<identity>`-element.
+The :doc:`product data type <api/product>` has encapsulated the :code:`<id>` element inside an :code:`<identity>`-element.
 
 .. code-block:: xml
 
@@ -81,6 +81,3 @@ The restrictions are more lenient for the elements :code:`mpn`, :code:`sku` and 
 
 .. |--| unicode:: U+2013  .. en dash, trimming surrounding whitespace
    :trim:
-
-.. role:: xml(code)
-   :language: XML
