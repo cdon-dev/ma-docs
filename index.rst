@@ -17,6 +17,7 @@ CDON Marketplace
 	Product Import/index
 	Product Import/receipts
 	Product Import/data-types
+	Product Import/identity
 	Product Import/validation
 	Product Import/tracking/index
 	Product Import/api/index
