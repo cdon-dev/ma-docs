@@ -7,17 +7,21 @@ Overview
 
 By exporting your inventory to CDON Marketplace, your products will be added to the CDON product catalog, which makes them available to CDON's customers.
 
-In the CDON Marketplace import process, there are two vital key concepts; **data types** and **receipts**. Deliveries are made with different :doc:`types of data <data-types>`, which populate a product with all necessary information. The :doc:`receipt <receipts>` is used to keep track on the progress of the import.
+In the CDON Marketplace import process, there are two vital key concepts; **data types** and **receipts**. Deliveries are made by posting different :doc:`types of data <data-types>`, which populate a product with all necessary information. The :doc:`receipt <receipts>` is used to keep track on the progress of the import.
 
 .. image:: overview.png
 	:alt: Conceptual Overview
 
-Each delivery is imported separately. When data of all types is available, the final product is assembled and added to the product catalog for presentation.
+Each delivery is imported independently. When data of all types is available, the final product is assembled and added to the product catalog for presentation.
 
 .. image:: assembly.png
 	:alt: Data Assembly
 
-The import process is a series of steps that data is passed through. During this process, the data is validated and may be modified according to the current business rules.
+
+The Import Process
+==================
+
+Data in a delivery is passed through a series of sequential steps which make out the import process. During this process, the data is validated and may be modified according to the current business rules.
 
 .. image:: process.png
 	:alt: Import Process
