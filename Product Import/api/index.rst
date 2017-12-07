@@ -11,6 +11,20 @@ Responses are returned with a HTTP status code and possibly a body in **JSON**-f
 Each delivery that is acceptable (according to the data contract) receives a :doc:`receipt <../receipts>`. Make sure to store this, as it is the key to :doc:`tracking <../tracking/index>` the progress of the delivery.
 
 
+Authentication
+==============
+
+For security reasons, all HTTP requests to the API must include a :code:`Authorization` header.
+
+The value of the header shall be the API token, prefixed by the word :code:`api` and a whitespace. Example:
+
+.. code-block:: code
+
+	Authorization: api 5875ca6c-229d-4f4c-a45f-4252b4583538
+
+
+
+
 Data Contracts
 ==============
 
