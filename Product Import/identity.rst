@@ -6,7 +6,7 @@ Product Identities
 
 The product identifier is the key that correlates all product data from different types.
 
-All four :doc:`data types <data-types>` specify the product key by using the the element :code:`id`.
+All four :doc:`data types <data-types>` specify the product key by using the element :code:`id`.
 
 
 
@@ -16,6 +16,8 @@ Model Product and Variations
 The *model product* (see :ref:`product`) must always have its own **unique** key, regardless of whether it has any variations or not.
 
 If the product has any variations, each variation is obligated to have its own unique product key.
+
+A variation product cannot be redefined to later map to a different model product. 
 
 .. ATTENTION::
 	No check will be done to identify duplicate (and possibly conflicting) product identities. It is the merchant's responsibility to maintain data consistency in regards of product identities.
@@ -50,7 +52,7 @@ The other elements, :code:`gtin`, :code:`mpn`, :code:`sku` and :code:`pickingLoc
 Case Insensitive
 ================
 
-Note that product keys are **not case sensitive**! For example, the following keys are all considered equal::
+Note that product id:s are **not case sensitive**! For example, the following id:s are all considered equal::
 
 	Product_A
 	product_a

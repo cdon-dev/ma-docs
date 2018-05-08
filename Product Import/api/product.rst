@@ -7,7 +7,7 @@ To reduce the quantity of imported data, products whose content has not changed 
 
 The URL to post product data to is::
 
-	http://import.api.marketplace.cdon.com/product
+	http://productimport.cdon.com/product
 
 
 Product Definition

@@ -7,7 +7,7 @@ This data type is incremental, which means that any data that can be applied wil
 
 The URL to post price data to is::
 
-	http://import.api.marketplace.cdon.com/price
+	http://productimport.cdon.com/price
 
 
 Data Contract
@@ -24,15 +24,15 @@ The last file is a supplement to the price.xsd, which define the price data stru
 Validation Rules
 ================
 
-The sale price may not be greater than the recommended price.
+The sale price may not be greater than the original price.
 
 
 Price
 =====
 
-The product price consists of two price values; **recommended** and **sale** price.
+The product price consists of two price values; **original** and **sale** price.
 
-The *recommended* price represents the `list price`_.
+The *original* price represents the `list price`_.
 
 The *sale* price represents the price that the product is up for sales for.
 
