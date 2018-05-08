@@ -6,7 +6,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Marketplace Documentation'
-copyright = '2017, CDON AB'
+copyright = '2018, CDON AB'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
