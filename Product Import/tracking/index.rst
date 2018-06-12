@@ -15,4 +15,4 @@ The :doc:`receipt <../receipts>` that is given when a delivery has been accepted
 
 The base URL to the tracking-API is::
 
-	http://tracking-import.api.marketplace.cdon.com
+	https://tracking-productimport.cdon.com

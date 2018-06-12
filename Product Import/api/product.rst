@@ -7,7 +7,7 @@ To reduce the quantity of imported data, products whose content has not changed 
 
 The URL to post product data to is::
 
-	http://productimport.cdon.com/product
+	https://productimport.cdon.com/product
 
 
 Product Definition

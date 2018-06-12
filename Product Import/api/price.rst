@@ -7,7 +7,7 @@ This data type is incremental, which means that any data that can be applied wil
 
 The URL to post price data to is::
 
-	http://productimport.cdon.com/price
+	https://productimport.cdon.com/price
 
 
 Data Contract

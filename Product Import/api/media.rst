@@ -5,7 +5,7 @@ The media data type associate pictures and videos with a product.
 
 The URL to post media data to is::
 
-	http://productimport.cdon.com/media
+	https://productimport.cdon.com/media
 
 
 Data Contract
