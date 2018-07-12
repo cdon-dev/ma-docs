@@ -35,4 +35,4 @@ The delivery time is a range in number of days, where the minimum value may not 
 Stock
 ================
 
-The stock value represents the number of products to be imported to CDON:s product database. When it comes to digital products and services, the stock value has to be very high so that they do not run out of stock due to now stock updates.
+The stock value represents the number of products to be imported to CDON:s product catalog. When it comes to services, digital products or other products with unlimited stock value, the imported value has to be very high (but not higher than a signed 32-bit integer) so that the product do not run out of stock due to no stock updates.
