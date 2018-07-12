@@ -30,3 +30,9 @@ Validation Rules
 ================
 
 The delivery time is a range in number of days, where the minimum value may not be greater than the maximum value.
+
+
+Stock
+================
+
+The stock value represents the number of products to be imported to CDON:s product database. When it comes to digital products and services, the stock value has to be very high so that they do not run out of stock due to now stock updates.
