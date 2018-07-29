@@ -28,10 +28,10 @@ To facilitate a structured delivery of data, each set of data must fulfill a **d
 
 The contracts are made publicly available at this location:
 
-http://schemas.cdon.com/marketplace/
+https://schemas.cdon.com/product/4.0/
 
 These contracts can with advantage be used as an acceptance test on the delivery before transmitting it to CDON Marketplace.
 
 .. IMPORTANT::
 	Not all business rules are enforced by the contract.
-	As the contract is primarily a data structure contract, higher order business rules are not validated until processing begins.
+	As the contract is primarily a data interchange format, higher order business rules are not validated until processing begins.

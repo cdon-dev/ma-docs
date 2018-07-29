@@ -39,16 +39,16 @@ The *sale* price represents the price that the product is up for sales for.
 Please note that the prices must include VAT.
 
 
-VAT
-===
+VAT Percentage
+==============
 
-The VAT is percentage represented by a decimal number between 0 and 1 with up to three decimals.
+The VAT is percentage represented by a decimal number between 0 and 100 with up to two decimals.
 
 **Example**::
 
- 	0.125
+ 	12.5
 
-which represents 12.5%.
+which represents a VAT of 12.5%.
 
 
 Shipping Rates

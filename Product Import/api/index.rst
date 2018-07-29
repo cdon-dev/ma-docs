@@ -32,7 +32,7 @@ As mentioned in :doc:`validation <../validation>`, a pre-validation is performed
 
 The location of the schema files is:
 
-https://schemas.cdon.com/marketplace/
+https://schemas.cdon.com/product/4.0/
 
 Use these files to generate XML and validate against them to avoid submitting invalid data.
 

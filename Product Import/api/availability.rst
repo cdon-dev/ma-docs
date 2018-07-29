@@ -33,6 +33,24 @@ The delivery time is a range in number of days, where the minimum value may not 
 
 
 Stock
-================
+=====
 
-The stock value represents the number of products to be imported to CDON:s product catalog. When it comes to services, digital products or other products with unlimited stock value, the imported value has to be very high (but not higher than a signed 32-bit integer) so that the product do not run out of stock due to no stock updates.
+The stock value represents the number of products to be imported to CDON:s product catalog.
+
+Regarding services, digital products or other products with **unlimited stock value**, the imported value has to be very high (but not higher than a signed 32-bit integer) so that the product do not run out of stock due to no stock updates.
+
+
+Will The Product Be Buyable?
+============================
+
+There are three parameters that control whether a product can be purchased by a customer:
+
+* Status
+* StartSellingDate
+* Stock
+
+As mentioned above, the ``status`` will ultimately decide whether the product is presented to customers or not. If it is set to ``Offline``, it will not be made available for purchase regardless of the other parameters.
+
+If ``stock`` is greater than zero and ``startSellingDate`` is in the past, the product is **buyable**.
+If ``stock`` is zero and ``startSellingDate`` is in the past, the product is not buyable, but the customer can sign up for notification when the product becomes available for purchase.
+If ``startSellingDate`` is in the future, the product will be **bookable**.
