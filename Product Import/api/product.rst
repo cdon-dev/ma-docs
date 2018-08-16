@@ -53,6 +53,48 @@ Some products may exist in different variants. Valid variables are:
 Within the same product, all variants must be of the same variable(s), meaning a single product cannot have one variant that varies on e.g. *flavor*, and another variant that varies on e.g. *size and color*.
 
 
+Product Size and Weight
+=======================
+
+The :code:`Dimensions` property of a product describe the product's size and weight.
+
+Spatial Dimensions
+
+.. _table-product-size:
+============ ========== ============================================
+Abbreviation Unit       Comment
+============ ========== ============================================
+um           micrometre
+µm           micrometre The same as 'um', but with the greek letter.
+mm           millimetre
+cm           centimetre
+dm           decimetre
+m            metre
+km           kilometre
+in           inch       0.0254 metres
+ft           foot       0.3048 metres
+yd           yard       0.9144 metres
+============ ========== ============================================
+
+Mass Dimensions
+
+.. _table-product-mass:
+============ ============ ============================================
+Abbreviation Unit         Comment
+============ ============ ============================================
+mcg          microgram
+µg           microgram    The same as 'mcg', but with the greek letter.
+mg           milligram
+g            gram
+hg           hectogram
+kg           kilogram
+t            metric tonne Equivalent to a 1000 kilograms
+gr           grain        0.06479891 grams
+oz           ounce        28.349523125 grams
+lb           pound        453.59237 grams
+============ ============ ============================================
+
+
 Sanitization
 ============
 

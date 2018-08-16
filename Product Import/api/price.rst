@@ -51,10 +51,10 @@ The VAT is percentage represented by a decimal number between 0 and 100 with up 
 which represents a VAT of 12.5%.
 
 
-Shipping Rates
+Shipping Costs
 ==============
 
-The following shipping rates are allowed:
+The following shipping costs are allowed:
 
 .. _table-shipping-rates:
 
