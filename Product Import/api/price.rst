@@ -32,9 +32,8 @@ Price
 
 The product price consists of two price values; **original** and **sale** price.
 
-The ``OriginalPrice`` represents the `list price`_.
-
-The ``SalePrice`` represents the price that the product is up for sales for.
+* The ``OriginalPrice`` represents the `list price`_.
+* The ``SalePrice`` represents the price that the product is up for sales for.
 
 Please note that the prices must include VAT.
 
