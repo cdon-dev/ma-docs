@@ -59,6 +59,7 @@ Product Size and Weight
 The :code:`Dimensions` property of a product describe the product's size and weight.
 
 Spatial Dimensions
+******************
 
 .. _table-product-size:
 ============ ========== ============================================
@@ -77,6 +78,7 @@ yd           yard       0.9144 metres
 ============ ========== ============================================
 
 Mass Dimensions
+***************
 
 .. _table-product-mass:
 ============ ============ ============================================
