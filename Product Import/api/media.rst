@@ -51,7 +51,7 @@ When the user has selected the size "M", the picture displayed will not change u
 
 Example 2:
 ^^^^^^^^^^
-A beverage varies on **size** (e.g. 2dl, 5dl or 1 liter) and **flavor** (e.g. banana or strawberry).
+A beverage varies on **size** (e.g. 2 dl, 5 dl or 1 liter) and **flavor** (e.g. banana or strawberry).
 When the user has selected the flavor "banana", the picture displayed will not change until the user selects another size.
 
 

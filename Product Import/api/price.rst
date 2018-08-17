@@ -32,9 +32,9 @@ Price
 
 The product price consists of two price values; **original** and **sale** price.
 
-The *original* price represents the `list price`_.
+The ``OriginalPrice`` represents the `list price`_.
 
-The *sale* price represents the price that the product is up for sales for.
+The ``SalePrice`` represents the price that the product is up for sales for.
 
 Please note that the prices must include VAT.
 
@@ -42,7 +42,7 @@ Please note that the prices must include VAT.
 VAT Percentage
 ==============
 
-The VAT is percentage represented by a decimal number between 0 and 100 with up to two decimals.
+The ``VatPercentage`` represents the value added taxed expressed as a percentage by a decimal number between 0 and 100 with up to two decimals.
 
 **Example**::
 
@@ -54,7 +54,7 @@ which represents a VAT of 12.5%.
 Shipping Costs
 ==============
 
-The following shipping costs are allowed:
+The ``ShippingCost`` allow the follwing values:
 
 .. _table-shipping-rates:
 
