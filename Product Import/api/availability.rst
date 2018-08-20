@@ -55,4 +55,4 @@ If ``Stock`` is greater than zero and ``Release Date`` is in the past, the produ
 If ``Stock`` is zero and ``Release Date`` is in the past, the product is not buyable, but the customer can sign up for notification when the product becomes available for purchase.
 If ``Release Date`` is in the future, the product will be **bookable**.
 
-Note that ``Release Date`` is a part of the :doc:`Product data flow <product>`.
+Note that ``Release Date`` is a part of the :doc:`Product data contract <product>`.
