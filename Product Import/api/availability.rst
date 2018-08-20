@@ -46,11 +46,13 @@ Will The Product Be Buyable?
 There are three parameters that control whether a product can be purchased by a customer:
 
 * Status
-* StartSellingDate
+* Release Date
 * Stock
 
 As mentioned above, the ``Status`` will ultimately decide whether the product is presented to customers or not. If it is set to ``Offline``, it will not be made available for purchase regardless of the other parameters.
 
-If ``Stock`` is greater than zero and ``StartSellingDate`` is in the past, the product is **buyable**.
-If ``Stock`` is zero and ``StartSellingDate`` is in the past, the product is not buyable, but the customer can sign up for notification when the product becomes available for purchase.
-If ``StartSellingDate`` is in the future, the product will be **bookable**.
+If ``Stock`` is greater than zero and ``Release Date`` is in the past, the product is **buyable**.
+If ``Stock`` is zero and ``Release Date`` is in the past, the product is not buyable, but the customer can sign up for notification when the product becomes available for purchase.
+If ``Release Date`` is in the future, the product will be **bookable**.
+
+Note that ``Release Date`` is a part of the :doc:`Product data contract <product>`.
