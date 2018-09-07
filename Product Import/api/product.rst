@@ -96,6 +96,42 @@ oz           ounce        28.349523125 grams
 lb           pound        453.59237 grams
 ============ ============ ============================================
 
+Energy Classification
+=====================
+
+Energy :code:`Energy` property of a product describe the energy classification.
+The energy property consists of four parts specified as tags.
+
+The energy classification property is optional, however to determine which products that **should** include energy classifications, or to 
+read further regarding energy classification, please visit https://europa.eu/youreurope/business/environment/energy-labels/index_en.htm.
+
+Energy Properties
+*****************
+.. _table-product-energy:
+============= =========== ===================================
+Property name Data type   Description
+============= =========== ===================================
+class         energyClass Energy class enumeration
+label         URL         Energy label
+arrow         URL         Energy arrow
+sheet         URL         Energy sheet ( aka Fische )
+============= =========== ===================================
+
+Energy Classes Enumeration
+**************************
+
+Accepted values for :code:`energyClass` is:
+
+* APlusPlusPlus     
+* APlusPlus         
+* APlus             
+* A                 
+* B                 
+* C                 
+* D                 
+* E                 
+* F                 
+* G                 
 
 Sanitization
 ============
