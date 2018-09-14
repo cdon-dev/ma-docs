@@ -12,7 +12,7 @@ This data type is incremental, which means that any data that can be applied wil
 
 The URL to post availability data to is::
 
-	https://productimport.cdon.com/availability
+	https://mis.cdon.com/availability
 
 
 Data Contract

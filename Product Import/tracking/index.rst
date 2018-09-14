@@ -15,6 +15,6 @@ The :doc:`receipt <../receipts>` that is given when a delivery has been accepted
 
 The base URL to the tracking-API is::
 
-	https://productimport.cdon.com/import/<query>
+	https://mis.cdon.com/import/<query>
 
 where `<query>` is :doc:`status <importstatus>`, :doc:`summary <importsummary>` or :doc:`details <productdetails>`.
