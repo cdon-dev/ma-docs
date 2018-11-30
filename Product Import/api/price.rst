@@ -38,16 +38,16 @@ The product price consists of two price values; **original** and **sale** price.
 Please note that the prices must include VAT.
 
 
-VAT Percentage
-==============
+VAT
+===
 
-The ``VatPercentage`` represents the value added taxed expressed as a percentage by a decimal number between 0 and 100 with up to two decimals.
+The ``Vat`` allows different values depending on VAT rates in the market where the products are being sold. The value is expressed as a percentage.
 
 **Example**::
 
- 	12.5
+ 	12
 
-which represents a VAT of 12.5%.
+which represents a VAT of 12%.
 
 
 Shipping Costs
