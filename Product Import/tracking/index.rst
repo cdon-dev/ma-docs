@@ -50,7 +50,7 @@ The response will be a JSON file with a list of the deliveries::
         }
     ]
     
-It is also posible to specify how many records you want to return by adding the querystring "take"::
+It is also possible to specify how many records you want to return by adding the querystring "take"::
     
     https://mis.cdon.com/deliveries?take=10
     
