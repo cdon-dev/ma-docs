@@ -23,7 +23,7 @@ Overview
     https://mis.cdon.com/deliveries
 
 
-Get the status of your last 100 deliveries.
+Get the status of your last 100 deliveries. (Latest first)
 The response will be a json file with a list of the deliveries::
     [
         { 
@@ -52,6 +52,12 @@ The response will be a json file with a list of the deliveries::
         }
     ]
     
+It is also posible to specify how many records you want to return by adding the querystring "take"::
+    
+    https://mis.cdon.com/deliveries?take=10
+    
+The maximum supported value is 1000.
+
 Delivery status
 ----
 ::
