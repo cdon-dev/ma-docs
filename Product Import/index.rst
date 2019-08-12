@@ -73,7 +73,5 @@ When contacting support, please provide the following information when available
 
 * Merchant ID
 * Receipt ID (see :doc:`receipts <receipts>`)
-* Tracking ID (see :doc:`tracking <tracking/index>`)
-* Tracking Code (see :doc:`tracking <tracking/index>`)
 
 Those details will help giving a more accurate diagnosis with technical matters.
