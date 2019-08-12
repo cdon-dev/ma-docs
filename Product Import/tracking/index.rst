@@ -1,6 +1,5 @@
 .. include:: ../../toc_default.txt
 
-
 Tracking
 ########
 
@@ -12,14 +11,17 @@ Products in any delivery are processed individually as they journey through the 
 	:alt: Emitting Tracking Events
 
 API
-###
+====
 The tracking application can be accessed using a web API. To access the API you must suply an authorization header to identify yourself. Use the same authorization header key as when you submit the products.
 
 The tracking API has 3 endpoints:
 
 Overview
-####
-https://mis.cdon.com/deliveries
+----
+::
+
+    https://mis.cdon.com/deliveries
+
 
 Get the status of your last 100 deliveries.
 The response will be a json file with a list of the deliveries::
@@ -51,8 +53,10 @@ The response will be a json file with a list of the deliveries::
     ]
     
 Delivery status
-####
-https://mis.cdon.com/deliveries/<ReceiptId>
+----
+::
+
+    https://mis.cdon.com/deliveries/<ReceiptId>
 
 Get the status of a aspecific delivery using the ReceiptId.
 The response will be a json file with the status of that delivery::
@@ -70,8 +74,10 @@ The response will be a json file with the status of that delivery::
     }
     
 Product failures
-####
-https://mis.cdon.com/deliveries/<ReceiptId>/failures
+----
+::
+
+    https://mis.cdon.com/deliveries/<ReceiptId>/failures
 
 If a delivery has one of more failed products, details of these failures can be viewed using this endpoint.
 The response will be a json file with a list of the failed products of the specified delivery::
