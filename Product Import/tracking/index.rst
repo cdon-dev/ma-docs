@@ -62,7 +62,7 @@ Delivery status
 
     https://mis.cdon.com/deliveries/<ReceiptId>
 
-Get the status of a aspecific delivery using the ReceiptId.
+Get the status of a specific delivery using the ReceiptId.
 The response will be a JSON file with the status of that delivery::
     { 
         "receiptId": "08d71ef5fe115a0800155d4af3d60000",
@@ -83,7 +83,7 @@ Product failures
 
     https://mis.cdon.com/deliveries/<ReceiptId>/failures
 
-If a delivery has one of more failed products, details of these failures can be viewed using this endpoint.
+If a delivery has one or more failed products, details of these failures can be viewed using this endpoint.
 The response will be a JSON file with a list of the failed products of the specified delivery::
     [
         {
