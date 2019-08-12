@@ -10,7 +10,7 @@ Products in any delivery are processed individually as they journey through the 
 
 API
 ====
-The tracking application can be accessed using a web API. To access the API you must suply an authorization header to identify yourself. Use the same authorization header key as when you submit the products.
+The tracking application can be accessed using a web API. To access the API you must supply an authorization header to identify yourself. Use the same authorization header key as when you submit the products.
 
 The tracking API has 3 endpoints:
 
