@@ -3,8 +3,6 @@
 Tracking
 ########
 
-.. include:: toc_tracking.txt
-
 Products in any delivery are processed individually as they journey through the import process. As the product passes certain milestones during the import, an entry is recorded in what is called the "tracking API". As the name suggests, these entries can be used to track the progress of the import (and individual products).
 
 .. image:: emitting.png
