@@ -48,7 +48,7 @@ The ``Vat`` allows different values depending on VAT rates in the market where t
  	12
 
 which represents a VAT of 12%.
-The VAT amount must be valid for the VAT identificatiohn number used in desired market.
+The VAT amount must be valid for the VAT identification number used in the desired market.
 
 
 Shipping Costs
