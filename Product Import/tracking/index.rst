@@ -31,7 +31,7 @@ The response will be a JSON file with a list of the deliveries::
             "endPoint": "Product",
             "status": "Failed",
             "errorMessage": "1 product(s) failed",
-            "totalProducts": 1,
+            "total": 1,
             "totalPending": 0,
             "totalSucceeded": 0,
             "totalFailed": 1
@@ -43,7 +43,7 @@ The response will be a JSON file with a list of the deliveries::
             "endPoint": "Product",
             "status": "Pending",
             "errorMessage": null,
-            "totalProducts": 1,
+            "total": 1,
             "totalPending": 1,
             "totalSucceeded": 0,
             "totalFailed": 0
@@ -71,7 +71,7 @@ The response will be a JSON file with the status of that delivery::
         "endPoint": "Product",
         "status": "Failed",
         "errorMessage": "1 product(s) failed",
-        "totalProducts": 1,
+        "total": 1,
         "totalPending": 0,
         "totalSucceeded": 0,
         "totalFailed": 1
