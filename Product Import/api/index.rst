@@ -51,3 +51,35 @@ Use these files to generate XML and validate against them to avoid submitting in
 	price
 	availability
 	media
+
+Example
+==============
+
+C#
+
+.. code-block:: code
+
+    public async Task<Guid> SendFile(string filePath)
+    {
+	var r = WebRequest.Create("https://mis.cdon.com/product");
+	r.Method = "POST";
+	r.ContentType = "application/xml";
+	r.Headers.Add("authorization", "api XXX");
+
+	using (var fileStream = File.OpenRead(filePath))
+	using (var targetStream = r.GetRequestStream())
+	{
+		await fileStream.CopyToAsync(targetStream);
+		await targetStream.FlushAsync();
+	}
+
+	using (var response = await r.GetResponseAsync())
+	using (var responseStream = response.GetResponseStream())
+	using (var streamReader = new StreamReader(responseStream))
+	using (var jsonReader = new JsonTextReader(streamReader))
+	{
+		var serializer = new JsonSerializer();
+		var result = serializer.Deserialize<dynamic>(jsonReader);
+		return result.receiptId;
+	}
+    }
